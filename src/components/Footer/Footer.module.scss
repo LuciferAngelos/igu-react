@@ -6,6 +6,7 @@
   .bottomBlockWrapper {
     display: flex;
   }
+
   .copyright {
     width: 1154px;
     font-size: 11px;
@@ -20,31 +21,33 @@
     margin-left: 59px;
     margin-top: 21px;
     position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
   }
 
   .logo18 {
-    position: absolute;
+    // position: absolute;
     background-image: url("../../assets/icons/18plus.png");
     width: 26px;
     height: 25px;
-    top: 0;
-    left: 0;
   }
+
   .logoGaming {
-    position: absolute;
+    // position: absolute;
     background-image: url("../../assets/icons/Gaming.png");
     width: 81px;
     height: 25px;
-    top: 0;
-    left: 45px;
   }
+
   .logoJftf {
-    position: absolute;
+    // position: absolute;
     background-image: url("../../assets/icons/jftf 1.png");
     width: 35px;
     height: 35px;
-    top: 50px;
-    left: 45px;
   }
 
   .carousel {
@@ -63,7 +66,7 @@
       position: absolute;
     }
 
-    .arrowButtonLeft{
+    .arrowButtonLeft {
       left: -70px;
       top: -10px;
     }
@@ -74,6 +77,7 @@
       transform: rotate(180deg);
     }
   }
+
   .mobileLogos {
     display: none;
   }
@@ -95,15 +99,19 @@
   .logos {
     display: none;
   }
+
   .mobileLogos {
     display: flex;
     margin-top: 20px;
     margin-bottom: 24px;
     width: 250px;
-    justify-content: space-between;
-    .logo18, .logoGaming {
+    justify-content: space-around;
+
+    .logo18,
+    .logoGaming {
       position: static;
     }
+
     .curacac {
       background-image: url("../../assets/icons/curacac.png");
       width: 93px;
@@ -115,12 +123,12 @@
     margin: 20px auto 10px;
 
     .arrowButtonLeft {
-      left: -50px;
+      left: -40px;
       top: -10px;
     }
 
     .arrowButtonRight {
-      right: -50px;
+      right: -40px;
       top: -10px;
       transform: rotate(180deg);
     }

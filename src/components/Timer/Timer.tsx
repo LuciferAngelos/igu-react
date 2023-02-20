@@ -49,9 +49,9 @@ const Timer = () => {
         ? { fontSize: 15, fontWeight: 400 }
         : { fontSize: 10, fontWeight: 400, bottom: -5 }}
       digitBlockStyle={!isMobile
-        ? { width: 40, height: 38, fontSize: 22 }
-        : { width: 32, height: 26, fontSize: 16 }}
-      dividerStyle={{ color: 'white', height: 1 }}
+        ? { width: 40, height: 76, fontSize: 30 }
+        : { width: 32, height: 57, fontSize: 16 }}
+      dividerStyle={{ color: 'white', height: 4 }}
       separatorStyle={{ color: 'white', size: '5px' }}
       duration={0.5}
       renderMap={[true, true, true, true]}

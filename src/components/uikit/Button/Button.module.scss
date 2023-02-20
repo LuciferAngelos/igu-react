@@ -25,10 +25,6 @@
     left: -100%;
   }
 
-  85% {
-    left: 20%;
-  }
-
   100% {
     left: -8%;
   }
@@ -38,10 +34,6 @@
 @keyframes bounceOnHover {
   0% {
     left: -100%;
-  }
-
-  85% {
-    left: 20%;
   }
 
   100% {
@@ -176,17 +168,11 @@
 
     &:not(.empty):hover {
       color: black;
-      border: 2px solid map_get($common, 'violet-3');
-
-      // background: none;
+      border: none;
 
       &:after {
         -webkit-animation: .2s linear both alternate bounceOnHover;
         animation: .2s linear both alternate bounceOnHover;
-      }
-
-      &.hoveredBackground {
-        // background: map_get($common, 'gray-6');
       }
 
       &:before {

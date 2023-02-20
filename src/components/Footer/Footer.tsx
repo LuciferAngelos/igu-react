@@ -127,7 +127,7 @@ const Footer = () => {
       </div>
       {
         isMobile && (
-          <Button href={`${baseUrl}${query}`} width={238} className={styles.playNow}>{t('common.playNow')}</Button>
+          <Button href={`${baseUrl}${query}`} width={238} className={styles.playNow}><span>{t('common.playNow')}</span></Button>
         )
       }
     </footer>
