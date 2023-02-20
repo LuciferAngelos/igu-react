@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/igu-react/static/css/main.022329ca.css",
-    "main.js": "/igu-react/static/js/main.43f7b8c2.js",
+    "main.css": "/igu-react/static/css/main.48b15b71.css",
+    "main.js": "/igu-react/static/js/main.8a04c6f2.js",
     "static/media/hotGame.gif": "/igu-react/static/media/hotGame.55a9bd8f3b17ce44cd62.gif",
     "static/media/top-background.png": "/igu-react/static/media/top-background.ab7c422cd8a2f91b6ba7.png",
     "static/media/jackpot.png": "/igu-react/static/media/jackpot.e23d41e2df7b342280ea.png",
@@ -33,11 +33,11 @@
     "static/media/rowdies-vietnamese-400-normal.woff2": "/igu-react/static/media/rowdies-vietnamese-400-normal.f109b140dfade1f1286a.woff2",
     "index.html": "/igu-react/index.html",
     "static/media/getFetch.cjs": "/igu-react/static/media/getFetch.40f37ddea2378391108f.cjs",
-    "main.022329ca.css.map": "/igu-react/static/css/main.022329ca.css.map",
-    "main.43f7b8c2.js.map": "/igu-react/static/js/main.43f7b8c2.js.map"
+    "main.48b15b71.css.map": "/igu-react/static/css/main.48b15b71.css.map",
+    "main.8a04c6f2.js.map": "/igu-react/static/js/main.8a04c6f2.js.map"
   },
   "entrypoints": [
-    "static/css/main.022329ca.css",
-    "static/js/main.43f7b8c2.js"
+    "static/css/main.48b15b71.css",
+    "static/js/main.8a04c6f2.js"
   ]
 }
