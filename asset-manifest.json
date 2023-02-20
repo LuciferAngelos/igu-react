@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/igu-react/static/css/main.b1a84198.css",
-    "main.js": "/igu-react/static/js/main.3a062a78.js",
+    "main.css": "/igu-react/static/css/main.022329ca.css",
+    "main.js": "/igu-react/static/js/main.43f7b8c2.js",
     "static/media/hotGame.gif": "/igu-react/static/media/hotGame.55a9bd8f3b17ce44cd62.gif",
     "static/media/top-background.png": "/igu-react/static/media/top-background.ab7c422cd8a2f91b6ba7.png",
     "static/media/jackpot.png": "/igu-react/static/media/jackpot.e23d41e2df7b342280ea.png",
     "static/media/bottom-background.jpg": "/igu-react/static/media/bottom-background.bcdbf3142fc486a704f0.jpg",
     "static/media/body.png": "/igu-react/static/media/body.3b45d23506052296e975.png",
-    "static/media/card1-background.png": "/igu-react/static/media/card1-background.2b8a117a43c84dacc885.png",
-    "static/media/card3-background.png": "/igu-react/static/media/card3-background.20cc7d32e279dcf5caf0.png",
+    "static/media/card1-background.png": "/igu-react/static/media/card1-background.22eb50b8ad002351a6a7.png",
+    "static/media/card3-background.png": "/igu-react/static/media/card3-background.6f4187e0470f5de7e733.png",
     "static/media/NinjavsSamurai_Samurai.png": "/igu-react/static/media/NinjavsSamurai_Samurai.0d18fdd6cd5feee9512c.png",
     "static/media/card2.png": "/igu-react/static/media/card2.288b0a032383a6719d78.png",
     "static/media/card2-background.png": "/igu-react/static/media/card2-background.a21026650f1613f0ae39.png",
@@ -33,11 +33,11 @@
     "static/media/rowdies-vietnamese-400-normal.woff2": "/igu-react/static/media/rowdies-vietnamese-400-normal.f109b140dfade1f1286a.woff2",
     "index.html": "/igu-react/index.html",
     "static/media/getFetch.cjs": "/igu-react/static/media/getFetch.40f37ddea2378391108f.cjs",
-    "main.b1a84198.css.map": "/igu-react/static/css/main.b1a84198.css.map",
-    "main.3a062a78.js.map": "/igu-react/static/js/main.3a062a78.js.map"
+    "main.022329ca.css.map": "/igu-react/static/css/main.022329ca.css.map",
+    "main.43f7b8c2.js.map": "/igu-react/static/js/main.43f7b8c2.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1a84198.css",
-    "static/js/main.3a062a78.js"
+    "static/css/main.022329ca.css",
+    "static/js/main.43f7b8c2.js"
   ]
 }
