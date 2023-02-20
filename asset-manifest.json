@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/igu-react/static/css/main.b1a84198.css",
+    "main.js": "/igu-react/static/js/main.3a062a78.js",
+    "static/media/hotGame.gif": "/igu-react/static/media/hotGame.55a9bd8f3b17ce44cd62.gif",
+    "static/media/top-background.png": "/igu-react/static/media/top-background.ab7c422cd8a2f91b6ba7.png",
+    "static/media/jackpot.png": "/igu-react/static/media/jackpot.e23d41e2df7b342280ea.png",
+    "static/media/bottom-background.jpg": "/igu-react/static/media/bottom-background.bcdbf3142fc486a704f0.jpg",
+    "static/media/body.png": "/igu-react/static/media/body.3b45d23506052296e975.png",
+    "static/media/card1-background.png": "/igu-react/static/media/card1-background.2b8a117a43c84dacc885.png",
+    "static/media/card3-background.png": "/igu-react/static/media/card3-background.20cc7d32e279dcf5caf0.png",
+    "static/media/NinjavsSamurai_Samurai.png": "/igu-react/static/media/NinjavsSamurai_Samurai.0d18fdd6cd5feee9512c.png",
+    "static/media/card2.png": "/igu-react/static/media/card2.288b0a032383a6719d78.png",
+    "static/media/card2-background.png": "/igu-react/static/media/card2-background.a21026650f1613f0ae39.png",
+    "static/media/dog.png": "/igu-react/static/media/dog.92a9d8a4df7531cf7250.png",
+    "static/media/card5.png": "/igu-react/static/media/card5.d80b75c6a0c512ba370f.png",
+    "static/media/card3.png": "/igu-react/static/media/card3.baa8db29930373992813.png",
+    "static/media/JourneytotheWealth_Monkey.png": "/igu-react/static/media/JourneytotheWealth_Monkey.3436cad113fc30782d92.png",
+    "static/media/card1.png": "/igu-react/static/media/card1.cf22ec5f87112225f8aa.png",
+    "static/media/card4.png": "/igu-react/static/media/card4.4f6916d7b913665581c4.png",
+    "static/media/card8.png": "/igu-react/static/media/card8.f7aa1a40cc7d6a078cec.png",
+    "static/media/card6.png": "/igu-react/static/media/card6.7528189c2edc84ba55a5.png",
+    "static/media/card7.png": "/igu-react/static/media/card7.ca937d8fa814388e5e4a.png",
+    "static/media/rowdies-all-400-normal.woff": "/igu-react/static/media/rowdies-all-400-normal.bd786fedf6e546503c9a.woff",
+    "static/media/head.png": "/igu-react/static/media/head.8797e5025c0fdaaf9e3b.png",
+    "static/media/head2.png": "/igu-react/static/media/head2.ae97f01be6467c5a38fd.png",
+    "static/media/rowdies-latin-400-normal.woff2": "/igu-react/static/media/rowdies-latin-400-normal.4b1c73ecd1647692dfa2.woff2",
+    "static/media/rowdies-latin-ext-400-normal.woff2": "/igu-react/static/media/rowdies-latin-ext-400-normal.d68f1d068c604ecf53dc.woff2",
+    "static/media/hand.png": "/igu-react/static/media/hand.418f2a4d03b50334f2d6.png",
+    "static/media/revicons.eot": "/igu-react/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/igu-react/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/igu-react/static/media/revicons.e8746a624ed098489406.woff",
+    "static/media/rowdies-vietnamese-400-normal.woff2": "/igu-react/static/media/rowdies-vietnamese-400-normal.f109b140dfade1f1286a.woff2",
+    "index.html": "/igu-react/index.html",
+    "static/media/getFetch.cjs": "/igu-react/static/media/getFetch.40f37ddea2378391108f.cjs",
+    "main.b1a84198.css.map": "/igu-react/static/css/main.b1a84198.css.map",
+    "main.3a062a78.js.map": "/igu-react/static/js/main.3a062a78.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b1a84198.css",
+    "static/js/main.3a062a78.js"
+  ]
+}
