@@ -1,0 +1,70 @@
+.header {
+  height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.registerWrapper {
+  margin-right: 25px;
+  animation: 4s linear infinite reminder;
+}
+
+.register {
+  animation: 2.5s cubic-bezier(.455, .03, .515, .955) infinite both shake-horizontal;
+  position: relative;
+}
+
+:global(.mobile) .logo {
+  width: 106px;
+  height: 50px;
+}
+
+:global(.mobile) .header {
+  height: 71px;
+  padding-top: 19px;
+}
+
+@keyframes reminder {
+
+  0%,
+  30%,
+  100% {
+    opacity: 0
+  }
+
+  47%,
+  92% {
+    opacity: 1
+  }
+}
+
+
+@keyframes shake-horizontal {
+
+  0%,
+  100% {
+    left: 0
+  }
+
+  10%,
+  30%,
+  50%,
+  70% {
+    left: -5px
+  }
+
+  20%,
+  40%,
+  60% {
+    left: 5px
+  }
+
+  80% {
+    left: 4px
+  }
+
+  90% {
+    left: -4px
+  }
+}

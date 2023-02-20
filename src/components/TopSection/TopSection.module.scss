@@ -1,0 +1,549 @@
+@import "../../styles/colors.module";
+
+.topSection {
+  background: url("../../assets/images/top-background.png");
+  height: 650px;
+  position: relative;
+  margin-bottom: 21px;
+
+  .blackout {
+    position: absolute;
+    height: 100%;
+    width: 90px;
+    background: linear-gradient(270deg, map_get($common, 'black-2') 0%, transparent 100%);
+    right: 0
+  }
+
+  .blackout:nth-child(2n) {
+    background: linear-gradient(90deg, map_get($common, 'black-2') 0%, transparent 100%);
+    left: 0
+  }
+
+  ;
+
+  .blackout:nth-child(3n) {
+    width: 100%;
+    height: 90px;
+    background: linear-gradient(180deg, map_get($common, 'black-2') 0%, transparent 100%);
+    top: 0
+  }
+
+  ;
+
+  .blackout:nth-child(4n) {
+    width: 100%;
+    height: 90px;
+    background: linear-gradient(0deg, map_get($common, 'black-2') 0%, transparent 100%);
+    bottom: 0
+  }
+
+  ;
+
+  .woman {
+    position: absolute;
+    width: 415px;
+    height: 663px;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -4px;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+      transform: translate(-50%) scale(1.06);
+
+      & .womanHead {
+        -webkit-animation: 1s cubic-bezier(.455, .03, .515, .955) head;
+        animation: 1s cubic-bezier(.455, .03, .515, .955) head;
+
+      }
+    }
+
+    .womanBack1 {
+      background-image: url("../../assets/images/woman/back1.png");
+      position: absolute;
+      top: 64px;
+      left: 42px;
+      width: 308px;
+      height: 191px;
+      -webkit-animation: 3s cubic-bezier(.455, .03, .515, .955) infinite both back1;
+      animation: 3s cubic-bezier(.455, .03, .515, .955) infinite both back1;
+    }
+
+    .womanBack2 {
+      background-image: url("../../assets/images/woman/back2.png");
+      position: absolute;
+      top: 193px;
+      left: 0;
+      width: 394px;
+      height: 217px;
+      -webkit-animation: 3s cubic-bezier(.455, .03, .515, .955) infinite both back2;
+      animation: 3s cubic-bezier(.455, .03, .515, .955) infinite both back2;
+    }
+
+    .womanBack3 {
+      background-image: url("../../assets/images/woman/back3.png");
+      position: absolute;
+      top: 344px;
+      left: 42px;
+      width: 308px;
+      height: 191px;
+      -webkit-animation: 3s cubic-bezier(.455, .03, .515, .955) infinite both back1;
+      animation: 3s cubic-bezier(.455, .03, .515, .955) infinite both back1;
+    }
+
+    .womanHead {
+      background-image: url("../../assets/images/woman/head.png");
+      position: absolute;
+      top: 0;
+      left: 135px;
+      width: 118px;
+      height: 102px;
+      transition: all 0.1s linear;
+    }
+
+    .womanBody {
+      background-image: url("../../assets/images/woman/body.png");
+      position: absolute;
+      top: 63px;
+      left: 42px;
+      width: 308px;
+      height: 541px;
+      transition: all 0.1s linear;
+    }
+
+    .womanHand {
+      background-image: url("../../assets/images/woman/hand.png");
+      position: absolute;
+      top: 40px;
+      left: 243px;
+      width: 71px;
+      height: 158px;
+      transition: all 0.1s linear;
+      -webkit-animation: 3s cubic-bezier(.455, .03, .515, .955) infinite both hand;
+      animation: 3s cubic-bezier(.455, .03, .515, .955) infinite both hand;
+    }
+
+    .womanDog {
+      background-image: url("../../assets/images/woman/dog.png");
+      position: absolute;
+      top: 352px;
+      left: 130px;
+      width: 286px;
+      height: 301px;
+      transition: all 0.1s linear;
+    }
+  }
+}
+
+.topSectionWrapper {
+  position: relative;
+}
+
+.topLeftCard {
+  position: absolute;
+  top: 8px;
+  left: 0;
+}
+
+.topRightCard {
+  position: absolute;
+  top: 8px;
+  right: 0;
+}
+
+.blWrapper {
+  position: absolute;
+  top: 416px;
+  left: 0;
+  border-radius: 8px;
+
+  & .front,
+  & .back {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 100%;
+    border-radius: 8px;
+  }
+
+  & .back {
+    display: none;
+  }
+
+  &.flipInStart {
+    -webkit-animation: .3s linear card-flip-start;
+    animation: .3s linear card-flip-start;
+  }
+
+  &.flipInEnd {
+    -webkit-animation: .3s linear card-flip-end;
+    animation: .3s linear card-flip-end;
+    padding: 0;
+  }
+
+  &.flipOutStart {
+    -webkit-animation: .3s linear card-flip-out-start;
+    animation: .3s linear card-flip-out-start;
+  }
+
+  &.flipOutEnd {
+    -webkit-animation: .3s linear card-flip-out-end;
+    animation: .3s linear card-flip-out-end;
+  }
+
+  &.gameCardLearnMore {
+    height: 242px;
+    margin-top: 0;
+    background: linear-gradient(180deg, #3C01B7 0%, rgba(60, 1, 183, 0.66) 33%, rgba(60, 1, 183, 0.15) 66%, transparent 100%);
+    // padding: 48px 25px 36px;
+
+    .back {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .front {
+      display: none;
+    }
+
+    .learnMoreTitle {
+      font-size: 30px;
+      line-height: 37px;
+      color: map_get($common, 'white-2');
+      margin-bottom: 0;
+      text-transform: uppercase;
+    }
+
+    .learnMoreText {
+      height: 100%;
+      max-height: 100px;
+      font-size: 27px;
+      font-weight: 300;
+      line-height: 33px;
+      overflow: hidden;
+      overflow-y: auto;
+      margin: 10px 0;
+    }
+
+    .closeButton {
+      position: absolute;
+      right: 23px;
+      top: 16px;
+      width: 26px;
+      height: 27px;
+      background: url("../../assets/icons/close.png");
+    }
+  }
+}
+
+
+.bottomRightCard {
+  position: absolute;
+  top: 416px;
+  right: 0;
+  padding-top: 25px;
+}
+
+.cardTitle {
+  font-size: 50px;
+  line-height: 55px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 11px;
+}
+
+.cardText {
+  font-size: 40px;
+  line-height: 115.7%;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: map_get($common, 'green-2');
+}
+
+.cardButton {
+  position: absolute;
+  top: 302px;
+}
+
+.cardTitle2 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.cardTitle3 {
+  font-size: 37px;
+  line-height: 46px;
+  color: map_get($common, 'green-2');
+  margin-bottom: 12px;
+}
+
+.openVipButton {
+  color: map_get($common, 'green-2') !important;
+  padding: 0 !important;
+  font-size: 20px !important;
+  margin-top: 5px;
+}
+
+:global(.mobile) {
+  .topSection {
+    height: 480px;
+    background-position: left -340px bottom -90px;
+    margin-bottom: -30px;
+  }
+
+  .cardTitle {
+    font-size: 34px;
+    line-height: 37px;
+    margin-bottom: 21px;
+  }
+
+  .cardTitle2 {
+    font-size: 23px;
+    line-height: 27px;
+  }
+
+  .cardText {
+    font-size: 25px;
+    line-height: 29px;
+  }
+
+  .cardButton {
+    top: 213px;
+  }
+
+
+
+  .blWrapper {
+    position: relative;
+    top: 293px;
+
+    &.gameCardLearnMore {
+      height: 174px;
+      // padding: 34px 17px 26px;
+      margin-top: 0;
+
+      .learnMoreTitle {
+        font-size: 20px;
+        line-height: 24px;
+      }
+
+      .learnMoreText {
+        font-size: 20px;
+        line-height: 25px;
+        max-height: 100px;
+      }
+
+      .closeButton {
+        position: absolute;
+        right: 18px;
+        top: 11px;
+        width: 20px;
+        height: 21px;
+        background-size: contain;
+        background-image: url("../../assets/icons/close.png");
+      }
+    }
+
+    & .bottomLeftCard {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .topLeftCard {
+    width: calc(100% - 32px) !important;
+    left: 16px;
+  }
+
+  .openVipButton {
+    font-size: 17px !important;
+    margin-top: 3px;
+  }
+}
+
+@-webkit-keyframes back1 {
+
+  0%,
+  90%,
+  100% {
+    transform: translate(0);
+  }
+
+  95% {
+    transform: translate(-1px);
+  }
+}
+
+@keyframes back1 {
+
+  0%,
+  90%,
+  100% {
+    transform: translate(0);
+  }
+
+  95% {
+    transform: translate(-1px);
+  }
+}
+
+@-webkit-keyframes back2 {
+
+  0%,
+  90%,
+  100% {
+    transform: translate(0);
+  }
+
+  95% {
+    transform: translate(0, -1px);
+  }
+}
+
+@keyframes back2 {
+
+  0%,
+  90%,
+  100% {
+    transform: translate(0);
+  }
+
+  95% {
+    transform: translate(0, -1px);
+  }
+}
+
+@-webkit-keyframes hand {
+
+  0%,
+  90%,
+  100% {
+    transform: rotate(0);
+  }
+
+  95% {
+    transform: rotate(1deg) translate(1px);
+  }
+}
+
+@keyframes hand {
+
+  0%,
+  90%,
+  100% {
+    transform: rotate(0);
+  }
+
+  95% {
+    transform: rotate(1deg) translate(1px);
+  }
+}
+
+@-webkit-keyframes head {
+
+  0%,
+  100% {
+    background-image: url("../../assets/images/woman/head.png");
+  }
+
+  35% {
+    background-image: url("../../assets/images/woman/head2.png");
+  }
+}
+
+@keyframes head {
+
+  0%,
+  100% {
+    background-image: url("../../assets/images/woman/head.png");
+  }
+
+  35% {
+    background-image: url("../../assets/images/woman/head2.png");
+  }
+}
+
+@-webkit-keyframes card-flip-start {
+  0% {
+    transform: perspective(700px) rotateY(0deg);
+  }
+
+  100% {
+    transform: perspective(700px) rotateY(90deg);
+  }
+}
+
+@keyframes card-flip-start {
+  0% {
+    transform: perspective(700px) rotateY(0deg);
+  }
+
+  100% {
+    transform: perspective(700px) rotateY(90deg);
+  }
+}
+
+@-webkit-keyframes card-flip-end {
+  0% {
+    transform: perspective(700px) rotateY(-90deg);
+  }
+
+  100% {
+    transform: perspective(700px) rotateY(0deg);
+  }
+}
+
+@keyframes card-flip-end {
+  0% {
+    transform: perspective(700px) rotateY(-90deg);
+  }
+
+  100% {
+    transform: perspective(700px) rotateY(0deg);
+  }
+}
+
+@-webkit-keyframes card-flip-out-end {
+  0% {
+    transform: perspective(700px) rotateY(90deg);
+  }
+
+  100% {
+    transform: perspective(700px) rotateY(0deg);
+  }
+}
+
+@keyframes card-flip-out-end {
+  0% {
+    transform: perspective(700px) rotateY(90deg);
+  }
+
+  100% {
+    transform: perspective(700px) rotateY(0deg);
+  }
+}
+
+@-webkit-keyframes card-flip-out-start {
+  0% {
+    transform: perspective(700px) rotateY(0deg);
+  }
+
+  100% {
+    transform: perspective(700px) rotateY(-90deg);
+  }
+}
+
+@keyframes card-flip-out-start {
+  0% {
+    transform: perspective(700px) rotateY(0deg);
+  }
+
+  100% {
+    transform: perspective(700px) rotateY(-90deg);
+  }
+}

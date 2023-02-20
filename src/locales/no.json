@@ -1,0 +1,56 @@
+{
+  "common": {
+    "playNow": "LEKE NÅ"
+  },
+  "header": {
+    "registration": "RASK REGISTRERING",
+    "signUp": "REGISTRER DEG"
+  },
+  "topSection": {
+    "welcomeBonus": "VELKOMMEN BONUS",
+    "upTo": "225 % opp til \n+ 5500 NOK + 130 FS",
+    "registerNow": "REGISTRERE",
+    "easyDeposit": "ENKEL INNSKUDD I KRYPTO",
+    "successful": "100 % vellykket",
+    "registerAndPlay": "REGISTRER DEG OG SPILL",
+    "specialBonuses": "SPESIELLE BONUSER FOR VIP-SPILLERE",
+    "vipTitle": "VELKOMMEN TIL VÅRT VIP-PROGRAM!",
+    "learnVipProgram": "Alle begynner et sted, ikke sant? Vårt VIP-program er laget for å gjøre denne reisen hyggelig for deg og føre deg til store gevinster og rikdom umiddelbart. Gå gjennom 20 nivåer og få premier: gratisspinn, kontanter og ukentlig cashback.",
+    "tournamentStarts": "Turneringen om:",
+    "openVip": "ÅPNE VIP-PROGRAM"
+  },
+  "timer": {
+    "day": "Day",
+    "hour": "Hour",
+    "min": "Min",
+    "sec": "Sec"
+  },
+  "gameCardsSection": {
+    "liveCasino": "LIVE CASINO",
+    "roulette": "ROULETT, BACCARAT, BLACKJACK OG MER",
+    "learnMore": "LÆRE MER",
+    "casino": "KASINO",
+    "slots": "OVER 3000 PLASSER FOR HVER SMAK",
+    "tournaments": "TURNERINGER",
+    "newTournaments": "NYE TURNERINGER\nSJEKK STARTEN",
+    "card1LearnMore": "Nyt Live Casino-spill som er streames i sanntid, hvor ekte forhandlere blander, handler og samhandler med Live Casino-spillere. Spill Live Blackjack, Live Roulette, Live Baccarat og mange flere å vinne med Igucasino! Opplev moroa, spenningen og mulighetenes magi.",
+    "card2LearnMore": "Velg hvilket som helst spill fra de største samling på over 3000 spilleautomater. Du finner alle typer spill for din smak. Spill nå og vinn JACKPOTTEN!",
+    "card3LearnMore": "Hvordan bli med i en turnering? \n1. Finn turneringen du vil spille. \n2. Spill for fullt i henhold til betingelsene for å vinne. \n3. Nyt herligheten! Bli en heftig kampspiller. Plasser innsatsene dine og gå oppover på topplisten. Jo flere innsatser, jo høyere belønning.",
+    "registerNow": "REGISTRERE"
+  },
+  "hotGamesSection": {
+    "title": "HETE SPILL VENTER FOR DEG AKKURAT NÅ",
+    "chooseGame": "VELG ET TOPPSPILL SPILL OG VINN NÅ!",
+    "card1Text": "Elvis Frog in Vegas",
+    "card2Text": "Gates of Olympus",
+    "card3Text": "Big Bass Bonanza",
+    "card4Text": "Wolf Gold",
+    "card5Text": "Wild Spin",
+    "card6Text": "Sun of Egypt 3",
+    "card7Text": "Hell Hot 100",
+    "card8Text": "Sugar Rush"
+  },
+  "footer": {
+    "copyright": "Copyright © 2023 www.igucasino.com is owned and operated by Dama N.V., a company registered and established under the laws of Curaçao. Dama N.V. is licensed and regulated by Antillephone N.V. (license no. 8048/JAZ2020-013). Dama N.V.’s registration number is 152125 and its registered address is Julianaplein 36, Willemstad, Curaçao. Friolion Limited is a wholly-owned subsidiary of Dama N.V., acting as an Agent on behalf of Dama N.V., registered in Cyprus with registered address Pavlou Nirvana & Aipeias, 4, ALPHA TOWER, Floor 1, Flat 11, 3021, Limassol, Cyprus and registration number HE 419102. All payments with Paysafe are made via Dama N.V. It is the player’s sole responsibility to inquire about the existing laws and regulations of the given jurisdiction for online gambling."
+  }
+}

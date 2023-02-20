@@ -1,0 +1,56 @@
+{
+  "common": {
+    "playNow": "JOGUE"
+  },
+  "header": {
+    "registration": "INSCRIÇÃO RÁPIDA",
+    "signUp": "INSCREVER-SE"
+  },
+  "topSection": {
+    "welcomeBonus": "BÔNUS DE BOAS-VINDAS",
+    "upTo": "225% até \n3750 BRL + 130 FS",
+    "registerNow": "REGISTRAR",
+    "easyDeposit": "DEPÓSITO FÁCIL EM CRIPTO",
+    "successful": "100% bem sucedido",
+    "registerAndPlay": "REGISTRE-SE E JOGUE",
+    "specialBonuses": "BÔNUS ESPECIAIS PARA JOGADORES VIP",
+    "vipTitle": "BEM-VINDO AO NOSSO PROGRAMA VIP!",
+    "learnVipProgram": "Todo mundo começa em algum lugar, certo? Nosso programa VIP é projetado para tornar esta jornada agradável para você e levá-lo a grandes ganhos e riqueza instantaneamente. Passe por 20 níveis e ganhe prêmios: rodadas grátis, dinheiro e reembolso semanal.",
+    "tournamentStarts": "Torneio começa em:",
+    "openVip": "ABRIR PROGRAMA VIP"
+  },
+  "timer": {
+    "day": "Day",
+    "hour": "Hour",
+    "min": "Min",
+    "sec": "Sec"
+  },
+  "gameCardsSection": {
+    "liveCasino": "CASINO AO VIVO",
+    "roulette": "ROLETA, BACCARAT, BLACKJACK E MAIS",
+    "learnMore": "SABER MAIS",
+    "casino": "CASSINO",
+    "slots": "3000 ESPAÇOS PARA CADA GOSTO",
+    "tournaments": "TORNEIOS",
+    "newTournaments": "NOVOS TORNEIOS\nNÃO PERCA O COMEÇO",
+    "card1LearnMore": "Aproveite os jogos de cassino ao vivo que são transmitido em tempo real, onde real os dealers embaralham, negociam e interagem com os jogadores do Live Casino. Tocar ao vivo Blackjack, Roleta ao vivo, Ao vivo Baccarat e muito mais para ganhar com Igucasino! Experimente a diversão, a emoção e a magia da possibilidade.",
+    "card2LearnMore": "Escolha qualquer jogo do maior coleção de mais de 3000 slots. Você encontrará todos os tipos de jogos para o seu gosto.Jogue agora e ganhe o JACKPOT!",
+    "card3LearnMore": "Como participar de um torneio? 1. Encontre o torneio que deseja jogar. 2. Jogue ao máximo de acordo com as condições para ganhar. 3. Aproveite a glória! Torne-se um jogador de batalhas ferozes. Faça suas apostas e subir na tabela de classificação. Quanto mais apostas, maior a recompensa.",
+    "registerNow": "REGISTRAR"
+  },
+  "hotGamesSection": {
+    "title": "JOGOS QUENTE ESTÃO ESPERANDO PARA VOCE AGORA MESMO",
+    "chooseGame": "ESCOLHA UM JOGO TOP JOGUE E GANHE AGORA!",
+    "card1Text": "Elvis Frog in Vegas",
+    "card2Text": "Gates of Olympus",
+    "card3Text": "Big Bass Bonanza",
+    "card4Text": "Wolf Gold",
+    "card5Text": "Wild Spin",
+    "card6Text": "Sun of Egypt 3",
+    "card7Text": "Hell Hot 100",
+    "card8Text": "Sugar Rush"
+  },
+  "footer": {
+    "copyright": "Copyright © 2023 www.igucasino.com is owned and operated by Dama N.V., a company registered and established under the laws of Curaçao. Dama N.V. is licensed and regulated by Antillephone N.V. (license no. 8048/JAZ2020-013). Dama N.V.’s registration number is 152125 and its registered address is Julianaplein 36, Willemstad, Curaçao. Friolion Limited is a wholly-owned subsidiary of Dama N.V., acting as an Agent on behalf of Dama N.V., registered in Cyprus with registered address Pavlou Nirvana & Aipeias, 4, ALPHA TOWER, Floor 1, Flat 11, 3021, Limassol, Cyprus and registration number HE 419102. All payments with Paysafe are made via Dama N.V. It is the player’s sole responsibility to inquire about the existing laws and regulations of the given jurisdiction for online gambling."
+  }
+}

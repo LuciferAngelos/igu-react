@@ -1,0 +1,56 @@
+{
+  "common": {
+    "playNow": "JOUER"
+  },
+  "header": {
+    "registration": "INSCRIPTION RAPIDE",
+    "signUp": "S'INSCRIRE"
+  },
+  "topSection": {
+    "welcomeBonus": "PRIME DE BIENVENUE",
+    "upTo": "225% jusqu'à \n 825 CAD + 130 FS",
+    "registerNow": "S'INSCRIRE",
+    "easyDeposit": "DÉPÔT FACILE EN CRYPTO",
+    "successful": "100% réussi",
+    "registerAndPlay": "INSCRIVEZ-VOUS ET JOUEZ",
+    "specialBonuses": "BONUS SPÉCIAUX POUR LES JOUEURS VIP",
+    "vipTitle": "BIENVENUE DANS NOTRE PROGRAMME VIP!",
+    "learnVipProgram": "Tout le monde commence quelque part, n'est-ce pas? Notre programme VIP est conçu pour faire ce voyage agréable pour vous et vous mener à de gros gains et la richesse instantanément. Passez par 20 niveaux et obtenez des prix : tours gratuits, cash et cashback hebdomadaire.",
+    "tournamentStarts": "Tournoi commence:",
+    "openVip": "PROGRAMME VIP OUVERT"
+  },
+  "timer": {
+    "day": "Day",
+    "hour": "Hour",
+    "min": "Min",
+    "sec": "Sec"
+  },
+  "gameCardsSection": {
+    "liveCasino": "CASINO EN DIRECT",
+    "roulette": "ROULETTE, BACCARAT, BLACKJACK ET PLUS",
+    "learnMore": "EN SAVOIR PLUS",
+    "casino": "CASINO",
+    "slots": "3000 SLOTS POUR TOUS LES GOÛTS",
+    "tournaments": "TOURNOIS",
+    "newTournaments": "NOUVEAUX TOURNOIS\nDÉCOUVREZ LE DÉBUT",
+    "card1LearnMore": "Profitez des jeux de casino en direct qui sont diffusé en temps réel, où réel les concessionnaires mélangent, distribuent et interagissent avec les joueurs de casino en direct. Jouer en direct Blackjack, roulette en direct, en direct Baccarat et bien d'autres à gagner avec Iguacasino! Découvrez le plaisir, le frisson et la magie de la possibilité.",
+    "card2LearnMore": "Choisissez n'importe quel jeu parmi les plus grands collection de plus de 3000 machines à sous. Vous trouverez tous les types de jeux à votre goût. Jouez maintenant et gagnez le JACKPOT!",
+    "card3LearnMore": "Comment rejoindre un tournoi? 1. Trouvez le tournoi auquel vous voulez jouer. 2. Jouez à fond selon les conditions pour gagner 3. Profitez de la gloire! Devenez un joueur de batailles féroces. Placez vos paris et monter dans le classement. Plus il y a de paris, plus la récompense est élevée.",
+    "registerNow": "S'INSCRIRE"
+  },
+  "hotGamesSection": {
+    "title": "JEUX CHAUDS ATTENDENT POUR VOUS TOUT DE SUITE",
+    "chooseGame": "CHOISISSEZ UN MEILLEUR JEU JOUEZ ET GAGNEZ MAINTENANT!",
+    "card1Text": "Elvis Frog in Vegas",
+    "card2Text": "Gates of Olympus",
+    "card3Text": "Big Bass Bonanza",
+    "card4Text": "Wolf Gold",
+    "card5Text": "Wild Spin",
+    "card6Text": "Sun of Egypt 3",
+    "card7Text": "Hell Hot 100",
+    "card8Text": "Sugar Rush"
+  },
+  "footer": {
+    "copyright": "Copyright © 2023 www.igucasino.com is owned and operated by Dama N.V., a company registered and established under the laws of Curaçao. Dama N.V. is licensed and regulated by Antillephone N.V. (license no. 8048/JAZ2020-013). Dama N.V.’s registration number is 152125 and its registered address is Julianaplein 36, Willemstad, Curaçao. Friolion Limited is a wholly-owned subsidiary of Dama N.V., acting as an Agent on behalf of Dama N.V., registered in Cyprus with registered address Pavlou Nirvana & Aipeias, 4, ALPHA TOWER, Floor 1, Flat 11, 3021, Limassol, Cyprus and registration number HE 419102. All payments with Paysafe are made via Dama N.V. It is the player’s sole responsibility to inquire about the existing laws and regulations of the given jurisdiction for online gambling."
+  }
+}

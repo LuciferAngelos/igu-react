@@ -1,0 +1,414 @@
+@import "../../styles/colors.module";
+
+.gameCard {
+  height: 606px;
+  width: 456px;
+  margin-top: 44px;
+  border-radius: 8px;
+  position: relative;
+
+  .front,
+  .back {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 100%;
+    border-radius: 8px;
+  }
+
+  .back {
+    display: none;
+  }
+
+  &.flipInStart {
+    -webkit-animation: .3s linear card-flip-start;
+    animation: .3s linear card-flip-start;
+  }
+
+  &.flipInEnd {
+    -webkit-animation: .3s linear card-flip-end;
+    animation: .3s linear card-flip-end;
+  }
+
+  &.flipOutStart {
+    -webkit-animation: .3s linear card-flip-out-start;
+    animation: .3s linear card-flip-out-start;
+  }
+
+  &.flipOutEnd {
+    -webkit-animation: .3s linear card-flip-out-end;
+    animation: .3s linear card-flip-out-end;
+  }
+
+  &:hover,
+  &:global(.element-show) {
+    .labelText {
+      min-width: 100%;
+    }
+
+    .cardImage {
+      transform: scale(1.18) translate(-42%);
+    }
+
+    .background {
+      background-position: 0 14px;
+    }
+
+    &.gameCardGradient {
+      .background {
+        &:before {
+          top: 14px;
+          height: 318px;
+        }
+      }
+    }
+  }
+
+  .content {
+    height: 426px;
+    background: linear-gradient(180deg, map_get($common, 'violet-2') 8.09%, map_get($common, 'violet-1') 108.78%);
+    border-radius: 0 0 8px 8px;
+    padding: 204px 11px 0 31px;
+    position: relative;
+  }
+
+  .title {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 110%;
+  }
+
+  .buttonGroup {
+    position: absolute;
+    bottom: 43px;
+  }
+
+  .playNow {
+    margin-right: 25px;
+  }
+
+  .background {
+    position: absolute;
+    top: 0;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 372px;
+    z-index: 2;
+    transition: all 0.3s ease-out;
+    border-radius: 8px;
+  }
+
+  .labelWrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
+  }
+
+  .label {
+    position: absolute;
+    left: - 5%;
+    top: 242px;
+    padding: 0 20px 0 40px;
+    height: 50px;
+    transform: rotate(-14deg);
+    width: 110%;
+    background: map_get($common, 'green-2');
+    display: flex;
+    align-items: center;
+  }
+
+  .labelText {
+    font-size: 24px;
+    line-height: 30px;
+    color: map_get($common, 'black-1');
+    text-transform: uppercase;
+    transition: all 0.3s ease-out;
+    min-width: 20px;
+    text-align: right;
+  }
+
+  .cardImage {
+    position: absolute;
+    top: -17px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 324px;
+    height: 378px;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease-out;
+  }
+
+
+  &.gameCardGradient {
+    .background {
+      height: 100%;
+      border-radius: 8px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        border-radius: 8px;
+        top: 0;
+        width: 100%;
+        height: 332px;
+        transition: all 0.3s ease-out;
+        background: linear-gradient(180deg, map_get($common, 'violet-1') 0%, transparent 100%);
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 175px;
+        background: linear-gradient(0deg, map_get($common, 'black-2') 0%, transparent 100%);
+      }
+    }
+
+    .cardImage {
+      z-index: 10;
+      width: 372px;
+      height: 299px;
+      transform: translate(-52%);
+      top: -24px;
+    }
+
+    &:hover,
+    &:global(.element-show) {
+      .cardImage {
+        transform: scale(1.09) translate(-49%) !important;
+      }
+    }
+
+    .content {
+      background: none;
+      z-index: 10;
+    }
+  }
+
+  &.gameCardLearnMore {
+    height: 650px;
+    margin-top: 0;
+    background: linear-gradient(180deg, map_get($common, 'violet-2') 37.73%, map_get($common, 'violet-1') 105.95%);
+    padding: 48px 25px 36px;
+
+    .back {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .front {
+      display: none;
+    }
+
+    .learnMoreTitle {
+      font-size: 30px;
+      line-height: 37px;
+      color: map_get($common, 'white-2');
+      margin-bottom: 0;
+      text-transform: uppercase;
+    }
+
+    .learnMoreText {
+      font-size: 27px;
+      font-weight: 300;
+      line-height: 33px;
+      text-transform: lowercase;
+    }
+
+    .closeButton {
+      position: absolute;
+      right: 23px;
+      top: 16px;
+      width: 26px;
+      height: 27px;
+      background: url("../../assets/icons/close.png");
+    }
+  }
+}
+
+:global(.mobile) .gameCard {
+  width: 100%;
+  border-radius: 8px;
+  height: 436px;
+  margin-top: 32px;
+
+  .content {
+    height: 307px;
+    border-radius: 0 0 8px 8px;
+    padding: 161px 11px 0 22px;
+  }
+
+  .title {
+    font-size: 23px;
+    line-height: 110%;
+  }
+
+  .buttonGroup {
+    bottom: 25px;
+  }
+
+  .playNow {
+    margin-right: 15px;
+  }
+
+  .background {
+    top: 0;
+    height: 267px;
+    width: 100%;
+    background-size: contain;
+  }
+
+  .label {
+    left: -5%;
+    top: 165px;
+    padding: 0 20px 0 25px;
+    height: 40px;
+  }
+
+  .labelText {
+    font-size: 17px;
+    line-height: 21px;
+  }
+
+  .cardImage {
+    top: -14px;
+    width: 233px;
+    height: 233px;
+    background-size: cover;
+  }
+
+  &.gameCardGradient {
+    .background {
+      height: 100%;
+      border-radius: 8px;
+      background-size: 100%;
+
+      &:before {
+        border-radius: 8px;
+        height: 220px;
+      }
+
+      &:after {
+        height: 125px;
+      }
+    }
+
+    .cardImage {
+      width: 273px;
+      height: 219px;
+      transform: translate(-54%);
+    }
+  }
+
+  &.gameCardLearnMore {
+    height: 468px;
+    padding: 34px 17px 26px;
+    margin-top: 0;
+
+    .learnMoreTitle {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    .learnMoreText {
+      font-size: 20px;
+      line-height: 25px;
+    }
+
+    .closeButton {
+      position: absolute;
+      right: 18px;
+      top: 11px;
+      width: 20px;
+      height: 21px;
+      background-size: contain;
+      background-image: url("../../assets/icons/close.png");
+    }
+  }
+}
+
+@-webkit-keyframes card-flip-start {
+  0% {
+    transform: perspective(700px) rotateY(0deg);
+  }
+
+  100% {
+    transform: perspective(700px) rotateY(90deg);
+  }
+}
+
+@keyframes card-flip-start {
+  0% {
+    transform: perspective(700px) rotateY(0deg);
+  }
+
+  100% {
+    transform: perspective(700px) rotateY(90deg);
+  }
+}
+
+@-webkit-keyframes card-flip-end {
+  0% {
+    transform: perspective(700px) rotateY(-90deg);
+  }
+
+  100% {
+    transform: perspective(700px) rotateY(0deg);
+  }
+}
+
+@keyframes card-flip-end {
+  0% {
+    transform: perspective(700px) rotateY(-90deg);
+  }
+
+  100% {
+    transform: perspective(700px) rotateY(0deg);
+  }
+}
+
+@-webkit-keyframes card-flip-out-end {
+  0% {
+    transform: perspective(700px) rotateY(90deg);
+  }
+
+  100% {
+    transform: perspective(700px) rotateY(0deg);
+  }
+}
+
+@keyframes card-flip-out-end {
+  0% {
+    transform: perspective(700px) rotateY(90deg);
+  }
+
+  100% {
+    transform: perspective(700px) rotateY(0deg);
+  }
+}
+
+@-webkit-keyframes card-flip-out-start {
+  0% {
+    transform: perspective(700px) rotateY(0deg);
+  }
+
+  100% {
+    transform: perspective(700px) rotateY(-90deg);
+  }
+}
+
+@keyframes card-flip-out-start {
+  0% {
+    transform: perspective(700px) rotateY(0deg);
+  }
+
+  100% {
+    transform: perspective(700px) rotateY(-90deg);
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "common": {
+    "playNow": "SPIELEN"
+  },
+  "header": {
+    "registration": "SCHNELLE REGISTRIERUNG",
+    "signUp": "REGISTRIEREN"
+  },
+  "topSection": {
+    "welcomeBonus": "WILLKOMMENSBONUS",
+    "upTo": "225 % bis zu \n+ €550 + 130 FS",
+    "registerNow": "REGISTRAR",
+    "easyDeposit": "EINZAHLUNG IN KRYPTO",
+    "successful": "100% erfolgreich",
+    "registerAndPlay": "REGISTRIEREN & SPIELEN",
+    "specialBonuses": "SPEZIELLE BONI FÜR VIP-SPIELER",
+    "vipTitle": "WILLKOMMEN ZU UNSEREM VIP-PROGRAMM!",
+    "learnVipProgram": "Jeder fängt irgendwo an, oder? Unser VIP-Programm ist darauf ausgelegt, diese Reise zu unternehmen Spaß für Sie und führen Sie zu großen Gewinnen und Reichtum sofort. Gehen Sie durch 20 Stufen und erhalten Sie Preise: Freispiele, Bargeld und wöchentliches Cashback",
+    "tournamentStarts": "Turnierbeginn in:",
+    "openVip": "OFFENES VIP-PROGRAMM"
+  },
+  "timer": {
+    "day": "Day",
+    "hour": "Hour",
+    "min": "Min",
+    "sec": "Sec"
+  },
+  "gameCardsSection": {
+    "liveCasino": "LIVE-CASINO",
+    "roulette": "ROULETTE, BACCARAT, BLACKJACK & MEHR",
+    "learnMore": "LERN MEHR",
+    "casino": "KASINO",
+    "slots": "ÜBER 3000 SLOTS FÜR JEDER GESCHMACK",
+    "tournaments": "TURNIERE",
+    "newTournaments": "NEUE TURNIERE\nPRÜFEN SIE DEN START",
+    "card1LearnMore": "Genießen Sie Live-Casino-Spiele, die es gibt\nin Echtzeit gestreamt, wo echt\nDealer mischen, handeln und interagieren\nmit Live-Casino-Spielern. Live spielen\nBlackjack, Live-Roulette, Live\nBaccarat und viele mehr, um zu gewinnen\nmit Igucasino! Erleben Sie den Spaß,\nder Nervenkitzel und die Magie der Möglichkeiten.",
+    "card2LearnMore": "Wählen Sie ein beliebiges Spiel aus den größten\nSammlung von über 3000 Slots. Du wirst finden\nalle Arten von Spielen für Ihren Geschmack.\nJetzt spielen und den JACKPOT gewinnen!",
+    "card3LearnMore": "Wie nehme ich an einem Turnier teil?\n1. Suchen Sie das Turnier, das Sie spielen möchten.\n2. Spielen Sie gemäß den Gewinnbedingungen voll aus.\n3. Genieße den Ruhm!\n\nWerde ein erbitterter Kampfspieler. Platzieren Sie Ihre Wetten\nund in der Rangliste aufsteigen. Je mehr Wetten,\ndesto höher die Belohnung.",
+    "registerNow": "REGISTRAR"
+  },
+  "hotGamesSection": {
+    "title": "HEISSE SPIELE WARTEN FÜR SIE IM AUGENBLICK",
+    "chooseGame": "WÄHLEN SIE EIN TOP-SPIEL JETZT SPIELEN UND GEWINNEN!",
+    "card1Text": "Elvis Frog in Vegas",
+    "card2Text": "Gates of Olympus",
+    "card3Text": "Big Bass Bonanza",
+    "card4Text": "Wolf Gold",
+    "card5Text": "Wild Spin",
+    "card6Text": "Sun of Egypt 3",
+    "card7Text": "Hell Hot 100",
+    "card8Text": "Sugar Rush"
+  },
+  "footer": {
+    "copyright": "Copyright © 2023 www.igucasino.com is owned and operated by Dama N.V., a company registered and established under the laws of Curaçao. Dama N.V. is licensed and regulated by Antillephone N.V. (license no. 8048/JAZ2020-013). Dama N.V.’s registration number is 152125 and its registered address is Julianaplein 36, Willemstad, Curaçao. Friolion Limited is a wholly-owned subsidiary of Dama N.V., acting as an Agent on behalf of Dama N.V., registered in Cyprus with registered address Pavlou Nirvana & Aipeias, 4, ALPHA TOWER, Floor 1, Flat 11, 3021, Limassol, Cyprus and registration number HE 419102. All payments with Paysafe are made via Dama N.V. It is the player’s sole responsibility to inquire about the existing laws and regulations of the given jurisdiction for online gambling."
+  }
+}

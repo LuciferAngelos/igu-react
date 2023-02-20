@@ -1,0 +1,22 @@
+@import "../../styles/colors.module";
+
+.card {
+  width: 456px;
+  border-radius: 8px;
+  padding: 43px 31px;
+
+  &.blue {
+    //background: linear-gradient(180deg, map_get($common, 'violet-1') 0%, transparent 100%);
+    background: linear-gradient(180deg, map_get($common, 'violet-1') 0%, rgba(map_get($common, 'violet-1'), 0.66) 33%, rgba(map_get($common, 'violet-1'), 0.15) 66%, transparent 100%);
+  }
+
+  &.red {
+    background: linear-gradient(180deg, map_get($common, 'red-3') 0%, rgba(map_get($common, 'yellow-2'), 0.50) 40%, rgba(map_get($common, 'yellow-2'), 0.25) 60%, transparent 100%);
+  }
+}
+
+:global(.mobile) .card {
+  width: 100%;
+  border-radius: 8px;
+  padding: 30px 22px;
+}

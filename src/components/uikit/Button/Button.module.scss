@@ -1,0 +1,238 @@
+@import "../../../styles/colors.module";
+
+@-webkit-keyframes notBounce {
+  from {
+    left: 0
+  }
+
+  to {
+    left: -130%;
+  }
+}
+
+@keyframes notBounce {
+  from {
+    left: 0
+  }
+
+  to {
+    left: -130%;
+  }
+}
+
+@-webkit-keyframes bounceOnHover {
+  0% {
+    left: -100%;
+  }
+
+  85% {
+    left: 20%;
+  }
+
+  100% {
+    left: -8%;
+  }
+
+}
+
+@keyframes bounceOnHover {
+  0% {
+    left: -100%;
+  }
+
+  85% {
+    left: 20%;
+  }
+
+  100% {
+    left: -8%;
+  }
+
+}
+
+.button {
+  height: 40px;
+  border-radius: 8px;
+  padding: 0 20px;
+  border: none;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+
+  & span {
+    position: relative;
+    z-index: 2;
+  }
+
+  &.red {
+    background: linear-gradient(180deg, map_get($common, 'red-1') 0%, map_get($common, 'red-2') 100%);
+    color: map_get($common, 'white-2');
+    overflow: hidden;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 120%;
+      height: 100%;
+      background: map_get($common, 'gray-6');
+      transform: skew(-30deg);
+      z-index: 1;
+      -webkit-animation: .2s linear both alternate notBounce;
+      animation: .2s linear both alternate notBounce;
+    }
+  }
+
+  &.green {
+    background: linear-gradient(180deg, map_get($common, 'green-1') 0%, map_get($common, 'yellow-1') 100%);
+    color: map_get($common, 'black-3');
+    overflow: hidden;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 120%;
+      height: 100%;
+      background: map_get($common, 'gray-6');
+      transform: skew(-30deg);
+      z-index: 1;
+      -webkit-animation: .2s linear both alternate notBounce;
+      animation: .2s linear both alternate notBounce;
+    }
+  }
+
+  &.outlined {
+    background: none;
+    color: map_get($common, 'white-2');
+    position: absolute;
+    overflow: hidden;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 8px;
+      border: 2px solid transparent;
+      background: linear-gradient(180deg, map_get($common, 'green-1') 0%, map_get($common, 'yellow-1') 100%) border-box;
+      -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+      mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: destination-out;
+      mask-composite: exclude;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 120%;
+        height: 100%;
+        background: map_get($common, 'gray-6');
+        transform: skew(-30deg);
+        z-index: 1;
+        -webkit-animation: .2s linear both alternate notBounce;
+        animation: .2s linear both alternate notBounce;
+      }
+    }
+
+    &.red {
+      &:before {
+        background: linear-gradient(180deg, map_get($common, 'red-1') 0%, map_get($common, 'red-2') 100%) border-box;
+      }
+    }
+  }
+
+  &.empty {
+    background: none;
+    color: map_get($common, 'white-2');
+  }
+
+  &.withCorner {
+    &:after {
+      position: absolute;
+      content: '';
+      height: 20px;
+      width: 20px;
+      background: white;
+      right: -3px;
+      transform: rotate(45deg);
+      background: linear-gradient(135deg, map_get($common, 'green-1') 0%, map_get($common, 'yellow-1') 100%);
+      color: map_get($common, 'black-3');
+    }
+  }
+
+  &.hovered {
+    &.empty:hover {
+      color: map_get($common, 'green-2');
+      -webkit-text-decoration-line: underline;
+      text-decoration-line: underline;
+    }
+
+    &:not(.empty):hover {
+      color: map_get($common, 'white-2');
+      border: 2px solid map_get($common, 'violet-3');
+
+      // background: none;
+
+      &:after {
+        -webkit-animation: .2s linear both alternate bounceOnHover;
+        animation: .2s linear both alternate bounceOnHover;
+      }
+
+      &.hoveredBackground {
+        // background: map_get($common, 'gray-6');
+      }
+
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
+
+:global(.mobile) .button {
+  font-size: 14px;
+  line-height: 17px;
+
+  &.animation {
+    -webkit-animation: 1.5s cubic-bezier(.455, .03, .515, .955) infinite both ripple;
+    animation: 1.5s cubic-bezier(.455, .03, .515, .955) infinite both ripple;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+@-webkit-keyframes ripple {
+
+  0%,
+  85%,
+  100% {
+    transform: scale(1);
+  }
+
+  90%,
+  95% {
+    transform: scale(1.05)
+  }
+}
+
+@keyframes ripple {
+
+  0%,
+  85%,
+  100% {
+    transform: scale(1);
+  }
+
+  90%,
+  95% {
+    transform: scale(1.05)
+  }
+}

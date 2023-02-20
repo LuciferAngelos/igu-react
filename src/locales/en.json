@@ -1,0 +1,56 @@
+{
+  "common": {
+    "playNow": "Play now"
+  },
+  "header": {
+    "registration": "Quick registration",
+    "signUp": "Sign up"
+  },
+  "topSection": {
+    "welcomeBonus": "Welcome Bonus",
+    "upTo": "225% UP TO €550 \n+ 130 FS",
+    "registerNow": "Register now",
+    "easyDeposit": "easy DEPOSIT in crypto",
+    "successful": "100% successful",
+    "registerAndPlay": "REGISTER AND PLAY",
+    "specialBonuses": "SPECIAL BONUSES FOR VIP PLAYERS",
+    "vipTitle": "WELCOME TO OUR VIP PROGRAM!",
+    "learnVipProgram": "Learn Vip Program Learn Vip Program Learn Vip Program Learn Vip Program Learn Vip Program Learn Vip Program Learn Vip Program ",
+    "tournamentStarts": "Tournament starts in:",
+    "openVip": "Open vip program"
+  },
+  "timer": {
+    "day": "Day",
+    "hour": "Hour",
+    "min": "Min",
+    "sec": "Sec"
+  },
+  "gameCardsSection": {
+    "liveCasino": "Live casino",
+    "roulette": "ROULETTE, BACCARAT, BLACKJACK & MORE",
+    "learnMore": "Learn more",
+    "casino": "Casino",
+    "slots": "OVER 3000 SLOTS FOR EVERY TASTE",
+    "tournaments": "TOURNAMENTS",
+    "newTournaments": "NEW TOURNAMENTS\nDON'T MISS THE START",
+    "card1LearnMore": "Live casino (learn more) Enjoy Live Casino games which are streamed in real-time, where real dealers shuffle, deal and interact with Live Casino players. Play Live Blackjack, Live Roulette, Live Baccarat and many more to win with Igucasino!  Experience the fun, the thrill, and the majic of possibility.",
+    "card2LearnMore": "Casino (learn more)   \nChoose any game from the biggest \ncollection of over 3000 slots. You`ll find \nany types of games for your taste. \nPlay now and win the JACKPOT!",
+    "card3LearnMore": "Tournaments (learn more)    \nHow to join a tournament?\n1. Find the tournament you want to play.\n2. Play to the full according to the conditions to win.\n3. Enjoy the glory!\n\nBecome a fierce battles player. Place your bets \nand move up the leaderboard. The more bets, \nthe higher the reward.",
+    "registerNow": "Register now"
+  },
+  "hotGamesSection": {
+    "title": "hOt games are waiting for you right now",
+    "chooseGame": "CHOOSE A TOP GAME PLAY\nAND WIN NOW!",
+    "card1Text": "Elvis Frog in Vegas",
+    "card2Text": "Gates of Olympus",
+    "card3Text": "Big Bass Bonanza",
+    "card4Text": "Wolf Gold",
+    "card5Text": "Wild Spin",
+    "card6Text": "Sun of Egypt 3",
+    "card7Text": "Hell Hot 100",
+    "card8Text": "Sugar Rush"
+  },
+  "footer": {
+    "copyright": "Copyright © 2023 www.igucasino.com is owned and operated by Dama N.V., a company registered and established under the laws of Curaçao. Dama N.V. is licensed and regulated by Antillephone N.V. (license no. 8048/JAZ2020-013). Dama N.V.’s registration number is 152125 and its registered address is Julianaplein 36, Willemstad, Curaçao. Friolion Limited is a wholly-owned subsidiary of Dama N.V., acting as an Agent on behalf of Dama N.V., registered in Cyprus with registered address Pavlou Nirvana & Aipeias, 4, ALPHA TOWER, Floor 1, Flat 11, 3021, Limassol, Cyprus and registration number HE 419102. All payments with Paysafe are made via Dama N.V. It is the player’s sole responsibility to inquire about the existing laws and regulations of the given jurisdiction for online gambling."
+  }
+}

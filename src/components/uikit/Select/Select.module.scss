@@ -1,0 +1,88 @@
+@import "../../../styles/colors.module";
+
+
+
+.select {
+  width: 192px;
+  height: 41px;
+  border-radius: 8px;
+  padding: 4px 0;
+  background: map_get($common, 'gray-2');
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+
+  .icon {
+    width: 34px;
+    height: 33px;
+    margin-left: 4px;
+  }
+
+  .value {
+    font-size: 17px;
+    font-weight: 300;
+    margin-left: 27px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .arrow {
+    background-image: url("../../../assets/icons/arrow.png");
+    width: 8px;
+    height: 4px;
+    transform: rotate(180deg);
+    margin-left: auto;
+    margin-right: 18px;
+  }
+
+  &.opened {
+    .arrow {
+      transform: rotate(0deg);
+    }
+  }
+}
+
+.options {
+  width: 192px;
+  background: map_get($common, 'gray-2');
+  border-radius: 8px;
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: -197px;
+  max-height: 186px;
+  overflow-y: auto;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  height: 48px;
+  position: relative;
+
+  &:after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 173px;
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    background: map_get($common, 'gray-3');
+  }
+
+  &:last-child:after {
+    display: none;
+  }
+
+  &:hover {
+    .value {
+      -webkit-text-decoration-line: underline;
+      text-decoration-line: underline;
+    }
+  }
+}

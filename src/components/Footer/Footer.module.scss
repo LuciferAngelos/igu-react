@@ -1,0 +1,132 @@
+@import "../../styles/colors.module";
+
+.footer {
+  height: 238px;
+
+  .bottomBlockWrapper {
+    display: flex;
+  }
+  .copyright {
+    width: 1154px;
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: 300;
+    color: map_get($common, 'gray-4');
+    margin-left: 60px;
+    margin-top: 11px;
+  }
+
+  .logos {
+    margin-left: 59px;
+    margin-top: 21px;
+    position: relative;
+  }
+
+  .logo18 {
+    position: absolute;
+    background-image: url("../../assets/icons/18plus.png");
+    width: 26px;
+    height: 25px;
+    top: 0;
+    left: 0;
+  }
+  .logoGaming {
+    position: absolute;
+    background-image: url("../../assets/icons/Gaming.png");
+    width: 81px;
+    height: 25px;
+    top: 0;
+    left: 45px;
+  }
+  .logoJftf {
+    position: absolute;
+    background-image: url("../../assets/icons/jftf 1.png");
+    width: 35px;
+    height: 35px;
+    top: 50px;
+    left: 45px;
+  }
+
+  .carousel {
+    height: 28px;
+    width: 85%;
+    margin: 35px auto 40px;
+    position: relative;
+
+    .arrowButton {
+      background-color: transparent;
+      background-image: url("../../assets/icons/arrow2.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+    }
+
+    .arrowButtonLeft{
+      left: -70px;
+      top: -10px;
+    }
+
+    .arrowButtonRight {
+      right: -70px;
+      top: -10px;
+      transform: rotate(180deg);
+    }
+  }
+  .mobileLogos {
+    display: none;
+  }
+}
+
+:global(.mobile) .footer {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+
+  .copyright {
+    width: 100%;
+    margin-bottom: 33px;
+    margin-left: 0;
+  }
+
+  .logos {
+    display: none;
+  }
+  .mobileLogos {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 24px;
+    width: 250px;
+    justify-content: space-between;
+    .logo18, .logoGaming {
+      position: static;
+    }
+    .curacac {
+      background-image: url("../../assets/icons/curacac.png");
+      width: 93px;
+      height: 31px;
+    }
+  }
+
+  .carousel {
+    margin: 20px auto 10px;
+
+    .arrowButtonLeft {
+      left: -50px;
+      top: -10px;
+    }
+
+    .arrowButtonRight {
+      right: -50px;
+      top: -10px;
+      transform: rotate(180deg);
+    }
+  }
+
+  .playNow {
+    margin-bottom: 37px;
+  }
+}

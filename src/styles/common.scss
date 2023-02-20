@@ -1,0 +1,119 @@
+@import "colors.module";
+
+html,
+body {
+  margin: 0;
+  font-family: 'Rowdies', sans-serif;
+  background-color: map_get($common, 'black-2');
+  color: map_get($common, 'white-1');
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.app {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  margin: 0 12px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+a {
+  cursor: pointer;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.element-animation {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s;
+}
+
+.element-animation.element-show {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.mobile {
+  width: 100%;
+
+  .wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 430px;
+    padding: 0 16px;
+  }
+
+  .element-animation {
+    opacity: 1;
+    transform: translateY(0);
+    transition: none;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: rgba(white, 0.2);
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(white, 0.4);
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-input-placeholder,
+.placeholder {
+  color: rgba(0, 0, 0, 0.2);
+  font-family: inherit;
+}
+
+.flip-clock {
+  --fcc-flip-duration: 0.5s;
+  /* transition duration when flip card */
+  --fcc-digit-block-width: 56px;
+  /* width of digit card */
+  --fcc-digit-block-height: 38px;
+  /* height of digit card, highly recommend in even number */
+  --fcc-digit-font-size: 30px;
+  /* font size of digit */
+  --fcc-digit-color: #0D0D0D;
+  /* color of digit */
+  --fcc-label-font-size: 10px;
+  /* font size of label */
+  --fcc-label-color: #ffffff;
+  /* color of label */
+  --fcc-background: #fff;
+  /* background of digit card */
+  --fcc-divider-color: white;
+  /* color of divider */
+  --fcc-divider-height: 1px;
+  /* height of divider */
+  --fcc-separator-size: 6px;
+  /* size of colon */
+  --fcc-separator-color: red;
+  /* color of colon */
+}

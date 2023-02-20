@@ -1,0 +1,23 @@
+.countrySelect {
+  display: flex;
+  justify-content: flex-end;
+  height: 41px;
+}
+
+.select {
+  margin-right: 34px;
+}
+
+:global(.mobile) {
+  .countrySelect {
+    position: relative;
+    justify-content: center;
+    height: 0;
+  }
+
+  .select {
+    position: absolute;
+    top: -60px;
+    margin-right: 0;
+  }
+}
