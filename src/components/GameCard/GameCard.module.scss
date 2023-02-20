@@ -51,7 +51,7 @@
     }
 
     .background {
-      background-position: 0 14px;
+      background-position: 0 6px;
     }
 
     &.gameCardGradient {
@@ -261,12 +261,12 @@
     top: 0;
     height: 300px;
     width: 100%;
-    background-size: contain;
+    background-size: cover;
   }
 
   .label {
     left: -5%;
-    top: 193px;
+    top: 196px;
     padding: 0 20px 0 25px;
     height: 40px;
   }
@@ -277,7 +277,7 @@
   }
 
   .cardImage {
-    top: -14px;
+    top: -10px;
     width: 233px;
     height: 233px;
     background-size: cover;
