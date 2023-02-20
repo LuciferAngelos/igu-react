@@ -44,17 +44,17 @@ const Timer = () => {
     <FlipClockCountdown
       className='flip-clock'
       to={new Date().getTime() + timerTimeLeft * 1000}
-      labels={['months', t('timer.day'), t('timer.hour'), t(t('timer.sec'))]}
+      labels={[t('timer.day'), t('timer.hour'), t('timer.min'), t(t('timer.sec'))]}
       labelStyle={!isMobile
         ? { fontSize: 15, fontWeight: 400 }
         : { fontSize: 10, fontWeight: 400, bottom: -5 }}
       digitBlockStyle={!isMobile
-        ? { width: 56, height: 38, fontSize: 22 }
-        : { width: 52, height: 26, fontSize: 16 }}
+        ? { width: 40, height: 38, fontSize: 22 }
+        : { width: 32, height: 26, fontSize: 16 }}
       dividerStyle={{ color: 'white', height: 1 }}
       separatorStyle={{ color: 'white', size: '5px' }}
       duration={0.5}
-      renderMap={[false, true, true, true]}
+      renderMap={[true, true, true, true]}
     />
   )
 
