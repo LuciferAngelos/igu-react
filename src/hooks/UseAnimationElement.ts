@@ -14,7 +14,7 @@ function UseAnimationElement(dependency = [], condition = true) {
 
   useEffect(() => {
     if (condition) {
-      const options = { threshold: [!isMobile ? .2 : 1] };
+      const options = { threshold: [!isMobile ? .3 : 1] };
       const observer = new IntersectionObserver(onEntry, options);
       const elements = document.querySelectorAll('.element-animation');
       for (const elm of elements) {

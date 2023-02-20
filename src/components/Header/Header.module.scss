@@ -1,3 +1,5 @@
+@import "../../styles/colors.module";
+
 .header {
   height: 84px;
   display: flex;
@@ -7,12 +9,27 @@
 
 .registerWrapper {
   margin-right: 25px;
-  animation: 4s linear infinite reminder;
-}
-
-.register {
-  animation: 2.5s cubic-bezier(.455, .03, .515, .955) infinite both shake-horizontal;
   position: relative;
+  -webkit-animation: 2.5s cubic-bezier(.455, .03, .515, .955) infinite both shake-horizontal, 4s linear infinite reminder;
+  animation: 2.5s cubic-bezier(.455, .03, .515, .955) infinite both shake-horizontal, 4s linear infinite reminder;
+
+  &:after {
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 20px;
+    background: white;
+    right: -4px;
+    top: 10px;
+    transform: rotate(45deg);
+    background: linear-gradient(135deg, map_get($common, 'green-1') 0%, map_get($common, 'yellow-1') 100%);
+    color: map_get($common, 'black-3');
+  }
+
+  .register {
+    position: relative;
+  }
+
 }
 
 :global(.mobile) .logo {
@@ -23,6 +40,20 @@
 :global(.mobile) .header {
   height: 71px;
   padding-top: 19px;
+}
+
+@-webkit-keyframes reminder {
+
+  0%,
+  30%,
+  100% {
+    opacity: 0
+  }
+
+  47%,
+  92% {
+    opacity: 1
+  }
 }
 
 @keyframes reminder {
@@ -36,6 +67,36 @@
   47%,
   92% {
     opacity: 1
+  }
+}
+
+
+@-webkit-keyframes shake-horizontal {
+
+  0%,
+  100% {
+    left: 0
+  }
+
+  10%,
+  30%,
+  50%,
+  70% {
+    left: -5px
+  }
+
+  20%,
+  40%,
+  60% {
+    left: 5px
+  }
+
+  80% {
+    left: 4px
+  }
+
+  90% {
+    left: -4px
   }
 }
 

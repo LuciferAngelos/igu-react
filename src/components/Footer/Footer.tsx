@@ -15,11 +15,13 @@ import { isMobile } from "react-device-detect";
 import Button from "../uikit/Button/Button";
 import { baseUrl } from '../../config';
 import { useUpdateLinks } from '../../hooks/updateLinks';
+import UseAnimationElement from '../../hooks/UseAnimationElement';
 
 const Footer = () => {
   const { t } = useTranslation();
   const { query } = useUpdateLinks()
   const ref = useRef();
+  UseAnimationElement();
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -32,7 +34,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className={`${styles.footer} ${isMobile ? 'wrapper' : ''}`}>
+    <footer className={`${styles.footer} ${isMobile ? 'wrapper element-animation' : ''}`}>
       <div className={styles.carousel}>
         <button onClick={() => {
           ref.current?.previous();

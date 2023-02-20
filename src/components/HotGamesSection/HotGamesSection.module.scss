@@ -188,7 +188,7 @@
     background-size: cover;
     border: 1px solid;
     width: 236px;
-    height: 141px;
+    height: 201px;
     border-radius: 8px;
 
     &.swiperSlide1 {
@@ -238,7 +238,7 @@
   width: 19px;
   height: 8px;
   position: absolute;
-  bottom: - 83px;
+  bottom: -125px;
   right: 20px;
 }
 
@@ -247,7 +247,7 @@
   width: 30px;
   height: 33px;
   position: absolute;
-  bottom: -117px;
+  bottom: -165px;
   right: 8px;
   -webkit-animation: 2s linear infinite both handAnimation;
   animation: 2s linear infinite both handAnimation;
@@ -258,7 +258,7 @@
   width: 100%;
   background: map_get($common, "gray-7");
   border-radius: 8px;
-  margin-top: 54px;
+  margin-top: 100px;
   position: relative;
 
   :global(.thumb-0) {
@@ -282,7 +282,7 @@
   .hotGameTitle {
     font-size: 35px;
     line-height: 39px;
-    margin-bottom: 195px;
+    margin-bottom: 255px;
     text-indent: 38px;
   }
 

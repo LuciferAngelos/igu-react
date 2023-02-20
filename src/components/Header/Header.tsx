@@ -6,12 +6,15 @@ import { useTranslation } from "react-i18next";
 import { BrowserView, isMobile } from "react-device-detect";
 import { useUpdateLinks } from '../../hooks/updateLinks';
 import { baseUrl } from '../../config';
+import UseAnimationElement from '../../hooks/UseAnimationElement';
 
 const Header = () => {
   const { t } = useTranslation();
   const { query } = useUpdateLinks();
 
-  return <header className={`${style.header} wrapper`}>
+  UseAnimationElement();
+
+  return <header className={`${style.header} wrapper ${!isMobile ? 'element-animation' : ''}`}>
     <a href={`${baseUrl}${query}`}>
       <img src={logo} alt="lgu casino" className={style.logo} />
     </a>

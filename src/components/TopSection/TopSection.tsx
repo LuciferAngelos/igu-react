@@ -7,12 +7,13 @@ import Timer from "../Timer/Timer";
 import { BrowserView, isMobile } from "react-device-detect";
 import { useUpdateLinks } from '../../hooks/updateLinks';
 import { baseUrl } from '../../config';
+import UseAnimationElement from '../../hooks/UseAnimationElement';
 
 const TopSection = () => {
   const { t } = useTranslation();
   const { query } = useUpdateLinks();
   const ref = useRef<HTMLDivElement>(null);
-
+  UseAnimationElement();
   const flipIn = () => {
     ref.current.classList.remove(styles.flipOutEnd, styles.flipInEnd);
     ref.current.classList.add(styles.flipInStart);
@@ -35,7 +36,7 @@ const TopSection = () => {
   }
 
   return (
-    <section className={styles.topSection}>
+    <section className={`${styles.topSection} ${!isMobile ? 'element-animation' : ''}`}>
       <div className={styles.blackout} />
       <div className={styles.blackout} />
       <div className={styles.blackout} />
@@ -86,7 +87,7 @@ const TopSection = () => {
                 className={styles.closeButton}
                 onClick={flipOut}
               />
-              <p className={styles.learnMoreTitle}>{t("topSection.vipTitle")}</p>
+              {/* <p className={styles.learnMoreTitle}>{t("topSection.vipTitle")}</p> */}
               <p className={styles.learnMoreText}>{t("topSection.learnVipProgram")}</p>
               {/* <Button color="green" width={!isMobile ? 228 : 198}><span>{t("gameCardsSection.registerNow")}</span></Button> */}
             </Card>
