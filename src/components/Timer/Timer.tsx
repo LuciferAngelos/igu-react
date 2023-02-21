@@ -50,7 +50,7 @@ const Timer = () => {
         : { fontSize: 10, fontWeight: 400, bottom: -5 }}
       digitBlockStyle={!isMobile
         ? { width: 40, height: 60, fontSize: 32 }
-        : { width: 32, height: 40, fontSize: 18 }}
+        : { width: 32, height: 40, fontSize: 21 }}
       dividerStyle={{ color: 'white', height: 0 }}
       separatorStyle={{ color: 'white', size: '5px' }}
       duration={0.5}
