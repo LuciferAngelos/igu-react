@@ -21,6 +21,7 @@ const CountrySelect = () => {
 
   useEffect(() => {
     if (i18n.language && !langs.includes(i18n.language)) {
+      i18n.changeLanguage('en')
       setValue('en')
     }
   }, [i18n?.language])
@@ -29,19 +30,19 @@ const CountrySelect = () => {
     switch (language) {
       case 'en-au':
         i18n.changeLanguage('enAu')
-        setValue(i18n.language)
+        setValue('en-au')
         break;
       case 'en-ca':
         i18n.changeLanguage('enCa')
-        setValue(i18n.language)
+        setValue('en-ca')
         break;
       case 'fr-ca':
         i18n.changeLanguage('frCa')
-        setValue(i18n.language)
+        setValue('fr-ca')
         break;
       case 'pt-br':
         i18n.changeLanguage('ptBr')
-        setValue(i18n.language)
+        setValue('pt-br')
         break;
       default:
         i18n.changeLanguage(language)
@@ -55,12 +56,12 @@ const CountrySelect = () => {
       options={[
         { text: 'English', value: 'en', icon: englishFlag },
         { text: 'German', value: 'de', icon: germanFlag },
-        { text: 'Australia', value: 'en-au', icon: australiaFlag },
-        { text: 'Canada', value: 'en-ca', icon: canadianFlag },
+        { text: 'Australia', value: 'enAu', icon: australiaFlag },
+        { text: 'Canada', value: 'enCa', icon: canadianFlag },
         { text: 'Spanish', value: 'es', icon: spanishFlag },
-        { text: 'French', value: 'fr-ca', icon: frenchFlag },
+        { text: 'French', value: 'frCa', icon: frenchFlag },
         { text: 'Norwegian', value: 'no', icon: norwegianFlag },
-        { text: 'Portuguese', value: 'pt-br', icon: portugueseFlag },
+        { text: 'Portuguese', value: 'ptBr', icon: portugueseFlag },
         { text: 'Slovakian', value: 'sk', icon: slovakianFlag },
       ]}
       value={value}

@@ -212,42 +212,34 @@
     border-radius: 8px;
 
     &.swiperSlide1 {
-      background-image: url("../../assets/images/hotGames/card1.png");
       border-color: map_get($common, "blue-1");
     }
 
     &.swiperSlide2 {
-      background-image: url("../../assets/images/hotGames/card2.png");
       border-color: map_get($common, "red-4");
     }
 
     &.swiperSlide3 {
-      background-image: url("../../assets/images/hotGames/card3.png");
       border-color: map_get($common, "blue-2");
     }
 
     &.swiperSlide4 {
-      background-image: url("../../assets/images/hotGames/card4.png");
       border-color: map_get($common, "gray-5");
     }
 
     &.swiperSlide5 {
-      background-image: url("../../assets/images/hotGames/card5.png");
       border-color: map_get($common, "blue-1");
     }
 
     &.swiperSlide6 {
-      background-image: url("../../assets/images/hotGames/card6.png");
       border-color: map_get($common, "red-4");
     }
 
     &.swiperSlide7 {
-      background-image: url("../../assets/images/hotGames/card7.png");
       border-color: map_get($common, "blue-2");
     }
 
     &.swiperSlide8 {
-      background-image: url("../../assets/images/hotGames/card8.png");
       border-color: map_get($common, "gray-5");
     }
   }
@@ -300,8 +292,8 @@
   }
 
   .hotGameTitle {
-    font-size: 35px;
-    line-height: 39px;
+    font-size: 33px;
+    line-height: 34px;
     margin-bottom: 255px;
     text-indent: 38px;
   }
@@ -314,6 +306,10 @@
   }
 
   .hotGameButtonWrapper {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -70px;
     display: flex;
     justify-content: center;
   }

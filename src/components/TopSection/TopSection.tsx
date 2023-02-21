@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useMemo, useRef } from 'react';
 import { useTranslation } from "react-i18next";
 import styles from './TopSection.module.scss';
 import Card from "../Card/Card";
@@ -6,14 +6,33 @@ import Button from "../uikit/Button/Button";
 import Timer from "../Timer/Timer";
 import { BrowserView, isMobile } from "react-device-detect";
 import { useUpdateLinks } from '../../hooks/updateLinks';
-import { baseUrl } from '../../config';
+import { baseUrl, langs } from '../../config';
 import UseAnimationElement from '../../hooks/UseAnimationElement';
 
 const TopSection = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { query } = useUpdateLinks();
   const ref = useRef<HTMLDivElement>(null);
   UseAnimationElement();
+
+  const calculateWidthByCountry = useMemo(() => {
+
+    if (isMobile) {
+      switch (i18n.language) {
+        case 'frCa':
+          return ''
+        case 'enCa':
+          return '92%'
+        case 'sk':
+          return '80%'
+        case 'en':
+          return '77%'
+        default:
+          return '86%'
+      }
+    }
+  }, [i18n.language, isMobile])
+
   const flipIn = () => {
     ref.current.classList.remove(styles.flipOutEnd, styles.flipInEnd);
     ref.current.classList.add(styles.flipInStart);
@@ -21,7 +40,6 @@ const TopSection = () => {
       ref.current.classList.remove(styles.flipInStart);
       ref.current.classList.add(styles.flipInEnd, styles.gameCardLearnMore);
     }, 300);
-
   }
 
   const flipOut = () => {
@@ -57,7 +75,7 @@ const TopSection = () => {
       <div className={`${styles.topSectionWrapper} wrapper`}>
         <Card height={!isMobile ? 463 : 333} className={`${styles.topLeftCard} ${styles.card}`}>
           <p className={styles.cardTitle}>{t('topSection.welcomeBonus')}</p>
-          <p className={styles.cardText}>{t('topSection.upTo')}</p>
+          <p className={styles.cardText} style={{ width: calculateWidthByCountry }}>{t('topSection.upTo')}</p>
           <Button href={`${baseUrl}${query}`} className={styles.cardButton} color="green" width={!isMobile ? 228 : 164}><span>{t('topSection.registerNow')}</span></Button>
         </Card>
         {

@@ -8,7 +8,7 @@
   },
   "topSection": {
     "welcomeBonus": "BONO DE BIENVENIDA",
-    "upTo": "225% hasta \n+ €550 + 130 FS",
+    "upTo": "225% hasta + €550 + 130 FS",
     "registerNow": "REGÍSTRATE ",
     "easyDeposit": "DEPÓSITO FÁCIL EN CRIPTO",
     "successful": "100% exitoso",
@@ -41,6 +41,24 @@
   "hotGamesSection": {
     "title": "JUEGOS CALIENTES ESTÁN ESPERANDO PARA USTED AHORA MISMO",
     "chooseGame": "ELIGE UN JUEGO SUPERIOR ¡JUEGA Y GANA AHORA!",
+    "slotsPool": {
+      "slotImg1": "card25Image",
+      "slotUrl1": "https://www.igucasino.com/game/elvis-frog-in-vegas/",
+      "slotImg2": "card26Image",
+      "slotUrl2": "https://www.igucasino.com/game/gates-of-olympus/",
+      "slotImg3": "card27Image",
+      "slotUrl3": "https://www.igucasino.com/game/big-bass-bonanza/",
+      "slotImg4": "card28Image",
+      "slotUrl4": "https://www.igucasino.com/game/wolf-gold/",
+      "slotImg5": "card29Image",
+      "slotUrl5": "https://www.igucasino.com/game/wild-spin/",
+      "slotImg6": "card30Image",
+      "slotUrl6": "https://www.igucasino.com/game/sun-of-egypt-3/",
+      "slotImg7": "card31Image",
+      "slotUrl7": "https://www.igucasino.com/game/hell-hot-100/",
+      "slotImg8": "card32Image",
+      "slotUrl8": "https://www.igucasino.com/game/sugar-rush/"
+    },
     "card1Text": "Elvis Frog in Vegas",
     "card2Text": "Gates of Olympus",
     "card3Text": "Big Bass Bonanza",

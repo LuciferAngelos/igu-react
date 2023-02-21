@@ -13,11 +13,11 @@ export const baseUrl = 'https://www.igucasino.com/?sign-up=modal';
 export const langs = [
 	'en',
 	'de',
-	'en-au',
-	'en-ca',
+	'enAu',
+	'enCa',
 	'es',
-	'fr-ca',
+	'frCa',
 	'no',
-	'pt-br',
+	'ptBr',
 	'sk'
 ]

@@ -179,7 +179,8 @@
     &:hover,
     &:global(.element-show) {
       .cardImage {
-        transform: scale(1.09) translate(-49%) !important;
+        transform: scale(1.14) translate(-49%) !important;
+        top: -40px;
       }
     }
 
