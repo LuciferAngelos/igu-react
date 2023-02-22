@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/igu-react/static/css/main.f6aa5620.css",
-    "main.js": "/igu-react/static/js/main.7155114f.js",
+    "main.js": "/igu-react/static/js/main.3103e3de.js",
     "static/media/hotGame.gif": "/igu-react/static/media/hotGame.55a9bd8f3b17ce44cd62.gif",
     "static/media/top-background.png": "/igu-react/static/media/top-background.ab7c422cd8a2f91b6ba7.png",
     "static/media/jackpot.png": "/igu-react/static/media/jackpot.e23d41e2df7b342280ea.png",
@@ -98,10 +98,10 @@
     "index.html": "/igu-react/index.html",
     "static/media/getFetch.cjs": "/igu-react/static/media/getFetch.40f37ddea2378391108f.cjs",
     "main.f6aa5620.css.map": "/igu-react/static/css/main.f6aa5620.css.map",
-    "main.7155114f.js.map": "/igu-react/static/js/main.7155114f.js.map"
+    "main.3103e3de.js.map": "/igu-react/static/js/main.3103e3de.js.map"
   },
   "entrypoints": [
     "static/css/main.f6aa5620.css",
-    "static/js/main.7155114f.js"
+    "static/js/main.3103e3de.js"
   ]
 }
