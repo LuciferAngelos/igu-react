@@ -51,7 +51,7 @@
     }
 
     .background {
-      background-position: 0 6px;
+      background-position: 0 18px;
     }
 
     &.gameCardGradient {
@@ -179,7 +179,7 @@
     &:hover,
     &:global(.element-show) {
       .cardImage {
-        transform: scale(1.14) translate(-49%) !important;
+        transform: scale(1.25) translate(-43%, 10%) !important;
         top: -40px;
       }
     }
@@ -289,6 +289,7 @@
       height: 100%;
       border-radius: 8px;
       background-size: 100%;
+      background-position-y: 20px;
 
       &:before {
         border-radius: 8px;
