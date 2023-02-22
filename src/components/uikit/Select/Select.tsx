@@ -29,7 +29,9 @@ const Select: React.FC<Select> = (props) => {
   useEffect(() => {
     if (isOpen && scrollRef.current) {
       //@ts-ignore
-      scrollRef.current.scrollIntoView()
+      scrollRef.current.scrollIntoView({
+        behavior: 'smooth'
+      })
     }
   }, [isOpen, scrollRef?.current])
 
