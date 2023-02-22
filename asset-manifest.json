@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/igu-react/static/css/main.73d2359c.css",
+    "main.css": "/igu-react/static/css/main.f6aa5620.css",
     "main.js": "/igu-react/static/js/main.ee4bf6fc.js",
     "static/media/hotGame.gif": "/igu-react/static/media/hotGame.55a9bd8f3b17ce44cd62.gif",
     "static/media/top-background.png": "/igu-react/static/media/top-background.ab7c422cd8a2f91b6ba7.png",
@@ -97,11 +97,11 @@
     "static/media/rowdies-vietnamese-400-normal.woff2": "/igu-react/static/media/rowdies-vietnamese-400-normal.f109b140dfade1f1286a.woff2",
     "index.html": "/igu-react/index.html",
     "static/media/getFetch.cjs": "/igu-react/static/media/getFetch.40f37ddea2378391108f.cjs",
-    "main.73d2359c.css.map": "/igu-react/static/css/main.73d2359c.css.map",
+    "main.f6aa5620.css.map": "/igu-react/static/css/main.f6aa5620.css.map",
     "main.ee4bf6fc.js.map": "/igu-react/static/js/main.ee4bf6fc.js.map"
   },
   "entrypoints": [
-    "static/css/main.73d2359c.css",
+    "static/css/main.f6aa5620.css",
     "static/js/main.ee4bf6fc.js"
   ]
 }
