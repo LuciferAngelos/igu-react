@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/igu-react/static/css/main.e3b0a798.css",
-    "main.js": "/igu-react/static/js/main.3103e3de.js",
+    "main.css": "/igu-react/static/css/main.05f66a7e.css",
+    "main.js": "/igu-react/static/js/main.a7768ba9.js",
     "static/media/hotGame.gif": "/igu-react/static/media/hotGame.55a9bd8f3b17ce44cd62.gif",
     "static/media/top-background.png": "/igu-react/static/media/top-background.ab7c422cd8a2f91b6ba7.png",
+    "static/media/fullWoman.png": "/igu-react/static/media/fullWoman.21167818325524a7bd86.png",
     "static/media/jackpot.png": "/igu-react/static/media/jackpot.e23d41e2df7b342280ea.png",
     "static/media/bottom-background.jpg": "/igu-react/static/media/bottom-background.bcdbf3142fc486a704f0.jpg",
-    "static/media/body.png": "/igu-react/static/media/body.3b45d23506052296e975.png",
+    "static/media/body.png": "/igu-react/static/media/body.efc0d8173fc0836a5d54.png",
     "static/media/card1-background.png": "/igu-react/static/media/card1-background.22eb50b8ad002351a6a7.png",
     "static/media/card3-background.png": "/igu-react/static/media/card3-background.6f4187e0470f5de7e733.png",
     "static/media/NinjavsSamurai_Samurai.png": "/igu-react/static/media/NinjavsSamurai_Samurai.0d18fdd6cd5feee9512c.png",
@@ -97,11 +98,11 @@
     "static/media/rowdies-vietnamese-400-normal.woff2": "/igu-react/static/media/rowdies-vietnamese-400-normal.f109b140dfade1f1286a.woff2",
     "index.html": "/igu-react/index.html",
     "static/media/getFetch.cjs": "/igu-react/static/media/getFetch.40f37ddea2378391108f.cjs",
-    "main.e3b0a798.css.map": "/igu-react/static/css/main.e3b0a798.css.map",
-    "main.3103e3de.js.map": "/igu-react/static/js/main.3103e3de.js.map"
+    "main.05f66a7e.css.map": "/igu-react/static/css/main.05f66a7e.css.map",
+    "main.a7768ba9.js.map": "/igu-react/static/js/main.a7768ba9.js.map"
   },
   "entrypoints": [
-    "static/css/main.e3b0a798.css",
-    "static/js/main.3103e3de.js"
+    "static/css/main.05f66a7e.css",
+    "static/js/main.a7768ba9.js"
   ]
 }
