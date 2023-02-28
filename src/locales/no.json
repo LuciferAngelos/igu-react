@@ -43,21 +43,21 @@
     "chooseGame": "VELG ET TOPPSPILL SPILL OG VINN NÅ!",
     "slotsPool": {
       "slotImg1": "card17Image",
-      "slotUrl1": "https://www.igucasino.com/game/elvis-frog-in-vegas/",
+      "slotUrl1": "https://www.igucasino.com/no/game/elvis-frog-in-vegas/",
       "slotImg2": "card18Image",
-      "slotUrl2": "https://www.igucasino.com/game/gates-of-olympus/",
+      "slotUrl2": "https://www.igucasino.com/no/game/gates-of-olympus/",
       "slotImg3": "card19Image",
-      "slotUrl3": "https://www.igucasino.com/game/big-bass-bonanza/",
+      "slotUrl3": "https://www.igucasino.com/no/game/big-bass-bonanza/",
       "slotImg4": "card20Image",
-      "slotUrl4": "https://www.igucasino.com/game/wolf-gold/",
+      "slotUrl4": "https://www.igucasino.com/no/game/wolf-gold/",
       "slotImg5": "card21Image",
-      "slotUrl5": "https://www.igucasino.com/game/wild-spin/",
+      "slotUrl5": "https://www.igucasino.com/no/game/wild-spin/",
       "slotImg6": "card22Image",
-      "slotUrl6": "https://www.igucasino.com/game/sun-of-egypt-3/",
+      "slotUrl6": "https://www.igucasino.com/no/game/sun-of-egypt-3/",
       "slotImg7": "card23Image",
-      "slotUrl7": "https://www.igucasino.com/game/hell-hot-100/",
+      "slotUrl7": "https://www.igucasino.com/no/game/hell-hot-100/",
       "slotImg8": "card24Image",
-      "slotUrl8": "https://www.igucasino.com/game/sugar-rush/"
+      "slotUrl8": "https://www.igucasino.com/no/game/sugar-rush/"
     },
     "card1Text": "Elvis Frog in Vegas",
     "card2Text": "Gates of Olympus",
@@ -70,5 +70,12 @@
   },
   "footer": {
     "copyright": "Copyright © 2023 www.igucasino.com is owned and operated by Dama N.V., a company registered and established under the laws of Curaçao. Dama N.V. is licensed and regulated by Antillephone N.V. (license no. 8048/JAZ2020-013). Dama N.V.’s registration number is 152125 and its registered address is Julianaplein 36, Willemstad, Curaçao. Friolion Limited is a wholly-owned subsidiary of Dama N.V., acting as an Agent on behalf of Dama N.V., registered in Cyprus with registered address Pavlou Nirvana & Aipeias, 4, ALPHA TOWER, Floor 1, Flat 11, 3021, Limassol, Cyprus and registration number HE 419102. All payments with Paysafe are made via Dama N.V. It is the player’s sole responsibility to inquire about the existing laws and regulations of the given jurisdiction for online gambling."
+  },
+  "urls": {
+    "baseUrl": "https://www.igucasino.com/no/?sign-up=modal",
+    "bonusUrl": "https://www.igucasino.com/no/promotions?sign-up=modal",
+    "liveUrl": "https://www.igucasino.com/no/games/live?sign-up=modal",
+    "slotsUrl": "https://www.igucasino.com/no/games/slots?sign-up=modal",
+    "tournUrl": "https://www.igucasino.com/no/tournaments?sign-up=modal"
   }
 }

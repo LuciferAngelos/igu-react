@@ -1,4 +1,4 @@
-import React, { useMemo, useRef } from 'react';
+import React, { useEffect, useMemo, useRef } from 'react';
 import { useTranslation } from "react-i18next";
 import styles from './TopSection.module.scss';
 import Card from "../Card/Card";
@@ -53,6 +53,11 @@ const TopSection = () => {
     }, 300);
   }
 
+  window.addEventListener('load', () => {
+    let w = document.querySelector('#womanFull');
+    w.style.display = 'none';
+  })
+
   return (
     <section className={`${styles.topSection} ${!isMobile ? 'element-animation' : ''}`}>
       <div className={styles.blackout} />
@@ -62,6 +67,7 @@ const TopSection = () => {
       {
         !isMobile && (
           <div className={styles.woman}>
+            <div className={styles.womanFull} id="womanFull"></div>
             <div className={styles.womanBack1} />
             <div className={styles.womanBack2} />
             <div className={styles.womanBack3} />
@@ -76,14 +82,14 @@ const TopSection = () => {
         <Card height={!isMobile ? 463 : 333} className={`${styles.topLeftCard} ${styles.card}`}>
           <p className={styles.cardTitle}>{t('topSection.welcomeBonus')}</p>
           <p className={styles.cardText} style={{ width: calculateWidthByCountry }}>{t('topSection.upTo')}</p>
-          <Button href={`${baseUrl}${query}`} className={styles.cardButton} color="green" width={!isMobile ? 228 : 164}><span>{t('topSection.registerNow')}</span></Button>
+          <Button href={`${t('urls.bonusUrl')}${query}`} className={styles.cardButton} color="green" width={!isMobile ? 228 : 164}><span>{t('topSection.registerNow')}</span></Button>
         </Card>
         {
           !isMobile && (
             <Card height={463} className={`${styles.topRightCard} ${styles.card}`}>
               <p className={styles.cardTitle}>{t('topSection.easyDeposit')}</p>
               <p className={styles.cardText}>{t('topSection.successful')}</p>
-              <Button href={`${baseUrl}${query}`} className={styles.cardButton} color="green" variant="outlined" width={322} isHoveredBackground={false}><span>{t('topSection.registerAndPlay')}</span></Button>
+              <Button href={`${t('urls.baseUrl')}${query}`} className={styles.cardButton} color="green" variant="outlined" width={322} isHoveredBackground={false}><span>{t('topSection.registerAndPlay')}</span></Button>
             </Card>
           )
         }

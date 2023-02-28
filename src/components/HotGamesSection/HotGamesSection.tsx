@@ -9,7 +9,7 @@ import { isMobile } from "react-device-detect";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import ReactSlider from 'react-slider';
-import { baseUrl, slotsLinks } from '../../config';
+import { baseUrl } from '../../config';
 import { useUpdateLinks } from '../../hooks/updateLinks';
 //en
 import card1Image from '../../assets/images/hotGames/card1.png'
@@ -311,11 +311,28 @@ const HotGamesSection = () => {
     setIndex(Math.ceil(progress * 8) - 1)
   }
 
-  const slotLinks = useMemo(() => {
+  const mobSlotsUrls = useMemo(() => {
+    let tempArr = [
+      t('hotGamesSection.slotsPool.slotUrl1'),
+      t('hotGamesSection.slotsPool.slotUrl2'),
+      t('hotGamesSection.slotsPool.slotUrl3'),
+      t('hotGamesSection.slotsPool.slotUrl4'),
+      t('hotGamesSection.slotsPool.slotUrl5'),
+      t('hotGamesSection.slotsPool.slotUrl6'),
+      t('hotGamesSection.slotsPool.slotUrl7'),
+      t('hotGamesSection.slotsPool.slotUrl8'),
+    ]
+    return tempArr
+  }, [t])
+  console.log(mobSlotsUrls);
+
+  const slotQuery = useMemo(() => {
     if (query) {
       let parsedQuery = query.split('');
       parsedQuery.splice(0, 1, '?');
       return parsedQuery.join('');
+    } else {
+      return ''
     }
   }, [query])
 
@@ -385,11 +402,11 @@ const HotGamesSection = () => {
               color="red"
               width={!isMobile ? 192 : 238}
               href={isMobile
-                ? `${slotsLinks[index === -1
+                ? `${mobSlotsUrls[index === -1
                   ? 0
                   : index === 8 ? 7
-                    : index]}/${slotLinks}`
-                : `${baseUrl}${query}`}
+                    : index]}${slotQuery}`
+                : `${t('urls.baseUrl')}${query}`}
             ><span>{t('common.playNow')}</span></Button>
           </div>
           {
@@ -429,7 +446,7 @@ const HotGamesSection = () => {
                     position={{ top: 120, left: 70 }}
                     text={t('hotGamesSection.card1Text')}
                     inRotation={true}
-                    href={`${t('hotGamesSection.slotsPool.slotUrl1')}${slotLinks}`}
+                    href={`${t('hotGamesSection.slotsPool.slotUrl1')}${slotQuery}`}
                   />
                   <HotGameCard
                     id={'card2'}
@@ -441,7 +458,7 @@ const HotGamesSection = () => {
                     position={{ top: 120, left: 335 }}
                     text={t('hotGamesSection.card2Text')}
                     inRotation={isHovered && true}
-                    href={`${t('hotGamesSection.slotsPool.slotUrl2')}${slotLinks}`}
+                    href={`${t('hotGamesSection.slotsPool.slotUrl2')}${slotQuery}`}
                   />
                   <HotGameCard
                     id={'card3'}
@@ -453,7 +470,7 @@ const HotGamesSection = () => {
                     position={{ top: 62, left: 245 }}
                     text={t('hotGamesSection.card3Text')}
                     inRotation={true}
-                    href={`${t('hotGamesSection.slotsPool.slotUrl3')}${slotLinks}`}
+                    href={`${t('hotGamesSection.slotsPool.slotUrl3')}${slotQuery}`}
                   />
                   <HotGameCard
                     id={'card4'}
@@ -465,7 +482,7 @@ const HotGamesSection = () => {
                     position={{ top: 120, left: -263 }}
                     text={t('hotGamesSection.card4Text')}
                     inRotation={true}
-                    href={`${t('hotGamesSection.slotsPool.slotUrl4')}${slotLinks}`}
+                    href={`${t('hotGamesSection.slotsPool.slotUrl4')}${slotQuery}`}
                   />
                 </div>
                 <div className={styles.cardsTitleWrapper}>
@@ -482,7 +499,7 @@ const HotGamesSection = () => {
                     position={{ top: -200, left: 220 }}
                     text={t('hotGamesSection.card5Text')}
                     inRotation={isHovered && true}
-                    href={`${t('hotGamesSection.slotsPool.slotUrl5')}${slotLinks}`}
+                    href={`${t('hotGamesSection.slotsPool.slotUrl5')}${slotQuery}`}
                   />
                   <HotGameCard
                     id={'card6'}
@@ -494,7 +511,7 @@ const HotGamesSection = () => {
                     position={{ top: -475, left: 265 }}
                     text={t('hotGamesSection.card6Text')}
                     inRotation={true}
-                    href={`${t('hotGamesSection.slotsPool.slotUrl6')}${slotLinks}`}
+                    href={`${t('hotGamesSection.slotsPool.slotUrl6')}${slotQuery}`}
                   />
                   <HotGameCard
                     id={'card7'}
@@ -506,7 +523,7 @@ const HotGamesSection = () => {
                     position={{ top: 0, left: 0 }}
                     text={t('hotGamesSection.card7Text')}
                     inRotation={isHovered && true}
-                    href={`${t('hotGamesSection.slotsPool.slotUrl7')}${slotLinks}`}
+                    href={`${t('hotGamesSection.slotsPool.slotUrl7')}${slotQuery}`}
                   />
                   <HotGameCard
                     id={'card8'}
@@ -518,7 +535,7 @@ const HotGamesSection = () => {
                     position={{ top: -200, left: 0 }}
                     text={t('hotGamesSection.card8Text')}
                     inRotation={isHovered && true}
-                    href={`${t('hotGamesSection.slotsPool.slotUrl8')}${slotLinks}`}
+                    href={`${t('hotGamesSection.slotsPool.slotUrl8')}${slotQuery}`}
                   />
                 </div>
               </div>

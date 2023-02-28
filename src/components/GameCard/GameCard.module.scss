@@ -51,13 +51,13 @@
     }
 
     .background {
-      background-position: 0 4px;
+      background-position: 0 30px;
     }
 
     &.gameCardGradient {
       .background {
         &:before {
-          top: 14px;
+          top: 30px;
           height: 318px;
         }
       }
@@ -179,8 +179,8 @@
     &:hover,
     &:global(.element-show) {
       .cardImage {
-        transform: scale(1.25) translate(-43%, 10%) !important;
-        top: -40px;
+        transform: scale(1.2) translate(-43%, 10%) !important;
+        top: -75px;
       }
     }
 
@@ -195,6 +195,7 @@
     margin-top: 0;
     background: linear-gradient(180deg, map_get($common, 'violet-2') 37.73%, map_get($common, 'violet-1') 105.95%);
     padding: 48px 25px 36px;
+    white-space: pre-wrap;
 
     .back {
       display: flex;

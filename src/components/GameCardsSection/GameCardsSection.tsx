@@ -62,6 +62,7 @@ const GameCardsSection = () => {
       isActive={activeCards[0].isActive}
       handleActiveCard={handleActiveCard}
       isClicked={activeCards[0].isClicked}
+      href={t("urls.liveUrl")}
     />
     <GameCard
       label={t("gameCardsSection.casino")}
@@ -74,6 +75,7 @@ const GameCardsSection = () => {
       isActive={activeCards[1].isActive}
       handleActiveCard={handleActiveCard}
       isClicked={activeCards[1].isClicked}
+      href={t("urls.slotsUrl")}
     />
     {
       isMobile && (
@@ -93,6 +95,7 @@ const GameCardsSection = () => {
       isActive={activeCards[2].isActive}
       handleActiveCard={handleActiveCard}
       isClicked={activeCards[2].isClicked}
+      href={t("urls.tournUrl")}
     />
   </section>
 };

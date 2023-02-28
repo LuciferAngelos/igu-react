@@ -15,7 +15,7 @@ const Header = () => {
   UseAnimationElement();
 
   return <header className={`${style.header} wrapper ${!isMobile ? 'element-animation' : ''}`}>
-    <a href={`${baseUrl}${query}`}>
+    <a href={`${t('urls.baseUrl')}${query}`}>
       <img src={logo} alt="lgu casino" className={style.logo} />
     </a>
     {
@@ -32,14 +32,14 @@ const Header = () => {
                 component="div"
               >{t('header.registration')}</Button>
             </div>
-            <Button href={`${baseUrl}${query}`} color="red" width={211} isHoveredBackground={false}>
+            <Button href={`${t('urls.baseUrl')}${query}`} color="red" width={211} isHoveredBackground={false}>
               <span>{t('header.signUp')}</span>
             </Button>
           </div>
         )
         : (
           <Button
-            href={`${baseUrl}${query}`}
+            href={`${t('urls.baseUrl')}${query}`}
             color="green"
             width={135}
             disableAnimation

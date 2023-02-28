@@ -101,6 +101,17 @@
       transition: all 0.1s linear;
     }
 
+    .womanFull {
+      background-image: url("../../assets/images/woman/fullWoman.png");
+      position: absolute;
+      top: 0px;
+      left: 42px;
+      width: 308px;
+      height: 600px;
+      transition: all 0.1s linear;
+      z-index: 1;
+    }
+
     .womanBody {
       background-image: url("../../assets/images/woman/body.png");
       position: absolute;

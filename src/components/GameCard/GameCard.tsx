@@ -16,11 +16,12 @@ interface GameCardProps {
   index: number;
   isActive: boolean;
   handleActiveCard: (arg: number) => void;
-  isClicked: boolean
+  isClicked: boolean;
+  href: string
 }
 
 const GameCard: React.FC<GameCardProps> = (props) => {
-  const { label, title, image, background, gradientMode, learnMoreText, index, isActive, handleActiveCard, isClicked } = props;
+  const { label, title, image, background, gradientMode, learnMoreText, index, isActive, handleActiveCard, isClicked, href } = props;
   const ref = useRef<HTMLDivElement>();
   const { t } = useTranslation();
   const { query } = useUpdateLinks()
@@ -70,7 +71,7 @@ const GameCard: React.FC<GameCardProps> = (props) => {
         <div className={styles.content}>
           <p className={styles.title}>{title}</p>
           <div className={styles.buttonGroup}>
-            <Button href={`${baseUrl}${query}`} color="red" width={!isMobile ? 197 : 138} className={styles.playNow}><span>{t("common.playNow")}</span></Button>
+            <Button href={`${href}${query}`} color="red" width={!isMobile ? 197 : 138} className={styles.playNow}><span>{t("common.playNow")}</span></Button>
             <Button variant="empty" component="button" onClick={() => handleActiveCard(index)}>{t("gameCardsSection.learnMore")}</Button>
           </div>
         </div>
@@ -82,7 +83,7 @@ const GameCard: React.FC<GameCardProps> = (props) => {
         />
         <p className={styles.learnMoreTitle}>{t("gameCardsSection.learnMore")}</p>
         <p className={styles.learnMoreText}>{learnMoreText}</p>
-        <Button href={`${baseUrl}${query}`} color="green" width={!isMobile ? 228 : 198}><span>{t("gameCardsSection.registerNow")}</span></Button>
+        <Button href={`${href}${query}`} color="green" width={!isMobile ? 228 : 198}><span>{t("gameCardsSection.registerNow")}</span></Button>
       </div>
     </div>
   );
