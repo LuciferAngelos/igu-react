@@ -21,3 +21,15 @@
     margin-right: 0;
   }
 }
+
+:global(.tablet) {
+  .countrySelect {
+    position: relative;
+    justify-content: flex-end;
+    height: 20px;
+  }
+
+  .select {
+    margin-right: 15px;
+  }
+}

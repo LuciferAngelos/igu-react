@@ -7,10 +7,12 @@
   position: relative;
   z-index: 15;
 }
+
 .timer {
   padding: 16px 12px !important;
   margin-bottom: -60px;
 }
+
 .timerTitle {
   font-size: 28px;
   line-height: 35px;
@@ -18,7 +20,11 @@
   margin-bottom: 8px;
 }
 
-:global(.mobile) .gameCardSection{
+:global(.mobile) .gameCardSection {
   flex-direction: column;
   gap: 9px;
+}
+
+:global(.tablet) .gameCardSection {
+  margin-top: 20px;
 }

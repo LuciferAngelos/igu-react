@@ -37,8 +37,6 @@
     bottom: 0
   }
 
-  ;
-
   .woman {
     position: absolute;
     width: 415px;
@@ -298,6 +296,224 @@
   padding: 0 !important;
   font-size: 20px !important;
   margin-top: 5px;
+}
+
+:global(.tablet) {
+  .topSection {
+    height: 335px;
+    background-position: left -190px bottom -90px;
+    margin-bottom: -30px;
+    position: relative;
+  }
+
+  .bottomRightCard {
+    position: absolute;
+    top: 220px;
+    right: 0;
+    padding-top: 22px;
+  }
+
+  .cardTitle3 {
+    font-size: 19px;
+    line-height: 23px;
+    color: map_get($common, 'green-2');
+    margin-bottom: 12px;
+  }
+
+  .cardTitle {
+    font-size: 25px;
+    line-height: 27px;
+    margin-bottom: 21px;
+  }
+
+  .cardTitle2 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .cardText {
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .cardButton {
+    top: 170px;
+  }
+
+
+
+  .blWrapper {
+    width: 235px;
+    position: relative;
+    top: 218px;
+
+    &.gameCardLearnMore {
+      width: 235px;
+      height: 174px;
+      // padding: 34px 17px 26px;
+      margin-top: 0;
+
+      & .front,
+      & .back {
+        width: 100%;
+      }
+
+      .learnMoreTitle {
+        font-size: 20px;
+        line-height: 24px;
+      }
+
+      .learnMoreText {
+        font-size: 14px;
+        line-height: 18px;
+        max-height: 115px;
+      }
+
+      .closeButton {
+        position: absolute;
+        right: 12px;
+        top: 8px;
+        width: 14px;
+        height: 14px;
+        background-size: contain;
+        background-image: url("../../assets/icons/close.png");
+        background-repeat: no-repeat;
+      }
+    }
+
+    & .bottomLeftCard {
+      width: 235px;
+      height: 125px;
+    }
+  }
+
+  .openVipButton {
+    font-size: 12px !important;
+    line-height: 14px;
+    margin-top: 10px;
+  }
+
+  .woman {
+    position: absolute;
+    width: 254px;
+    height: 363px;
+    left: 52%;
+    transform: translate(-50%);
+    bottom: -4px;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+      transform: translate(-50%) scale(1.06);
+
+      & .womanHead {
+        -webkit-animation: 1s cubic-bezier(.455, .03, .515, .955) head;
+        animation: 1s cubic-bezier(.455, .03, .515, .955) head;
+
+      }
+    }
+
+    .womanBack1 {
+      background-image: url("../../assets/images/woman/back1t.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: 64px;
+      left: 42px;
+      width: 158px;
+      height: 98px;
+      -webkit-animation: 3s cubic-bezier(.455, .03, .515, .955) infinite both back1;
+      animation: 3s cubic-bezier(.455, .03, .515, .955) infinite both back1;
+    }
+
+    .womanBack2 {
+      background-image: url("../../assets/images/woman/back2t.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: 136px;
+      left: 22px;
+      width: 202px;
+      height: 111px;
+      -webkit-animation: 3s cubic-bezier(.455, .03, .515, .955) infinite both back2;
+      animation: 3s cubic-bezier(.455, .03, .515, .955) infinite both back2;
+    }
+
+    .womanBack3 {
+      background-image: url("../../assets/images/woman/back3t.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: 220px;
+      left: 42px;
+      width: 158px;
+      height: 98px;
+      -webkit-animation: 3s cubic-bezier(.455, .03, .515, .955) infinite both back1;
+      animation: 3s cubic-bezier(.455, .03, .515, .955) infinite both back1;
+    }
+
+    .womanHead {
+      background-image: url("../../assets/images/woman/head.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: 30px;
+      left: 85px;
+      width: 61px;
+      height: 52px;
+      transition: all 0.1s linear;
+    }
+
+    .womanFull {
+      background-image: url("../../assets/images/woman/fullWoman.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: 0px;
+      left: 42px;
+      width: 308px;
+      height: 600px;
+      transition: all 0.1s linear;
+      z-index: 1;
+    }
+
+    .womanBody {
+      background-image: url("../../assets/images/woman/body.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: 63px;
+      left: 42px;
+      width: 159px;
+      height: 259px;
+      transition: all 0.1s linear;
+    }
+
+    .womanHand {
+      background-image: url("../../assets/images/woman/hand.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: 46px;
+      left: 137px;
+      width: 36px;
+      height: 81px;
+      transition: all 0.1s linear;
+      -webkit-animation: 3s cubic-bezier(.455, .03, .515, .955) infinite both hand;
+      animation: 3s cubic-bezier(.455, .03, .515, .955) infinite both hand;
+    }
+
+    .womanDog {
+      background-image: url("../../assets/images/woman/dog.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: 208px;
+      left: 79px;
+      width: 147px;
+      height: 169px;
+      transition: all 0.1s linear;
+    }
+  }
 }
 
 :global(.mobile) {

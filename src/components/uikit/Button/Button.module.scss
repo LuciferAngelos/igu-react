@@ -192,6 +192,19 @@
   }
 }
 
+:global(.tablet) .button {
+  height: 20.67px;
+  font-size: 9px;
+  line-height: 11px;
+  padding: 0 10px;
+  padding-top: 2px;
+
+  &.animation {
+    // -webkit-animation: 1.5s cubic-bezier(.455, .03, .515, .955) infinite both ripple;
+    // animation: 1.5s cubic-bezier(.455, .03, .515, .955) infinite both ripple;
+  }
+}
+
 .uppercase {
   text-transform: uppercase;
 }

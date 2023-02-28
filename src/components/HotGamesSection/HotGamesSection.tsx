@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import Button from "../uikit/Button/Button";
 import colors from '../../styles/colors.module.scss'
 import UseAnimationElement from "../../hooks/UseAnimationElement";
-import { isMobile } from "react-device-detect";
+import { isMobile, isTablet } from "react-device-detect";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import ReactSlider from 'react-slider';
@@ -128,7 +128,7 @@ const HotGameCard: React.FC<HotGameCardProps> = (props) => {
       <div className={styles.hotGameCardBackground}>
         <div className={styles.hotGameCardContent}>
           <div className={styles.hotGameCardText}>{text}</div>
-          <Button width={192} color="red" href={href}><span>{t('common.playNow')}</span></Button>
+          <Button width={!isTablet ? 192 : 80} color="red" href={href}><span>{t('common.playNow')}</span></Button>
         </div>
       </div>
     </div>
@@ -324,7 +324,6 @@ const HotGamesSection = () => {
     ]
     return tempArr
   }, [t])
-  console.log(mobSlotsUrls);
 
   const slotQuery = useMemo(() => {
     if (query) {
@@ -337,9 +336,9 @@ const HotGamesSection = () => {
   }, [query])
 
   return (
-    <section className={`${styles.hotGamesSection} ${!isMobile ? 'element-animation' : ''}`}>
+    <section className={`${styles.hotGamesSection} ${!isMobile ? 'element-animation' : isTablet ? 'element-animation' : ''}`}>
       {
-        isMobile && (
+        isMobile && !isTablet && (
           <div className={styles.swiperWrapper}>
             <Swiper
               ref={swiperRef}
@@ -393,14 +392,14 @@ const HotGamesSection = () => {
           </div>
         )
       }
-      <div className={`wrapper ${isMobile ? '' : "d-flex position-relative"}`}>
-        <Card height={!isMobile ? 570 : 410} color="red" className="position-relative">
+      <div className={`wrapper ${isMobile && !isTablet ? '' : "d-flex position-relative"}`}>
+        <Card height={!isMobile ? 570 : isTablet ? 294 : 410} color="red" className="position-relative">
           <div className={styles.hotGameIcon} />
           <p className={styles.hotGameTitle}>{t('hotGamesSection.title')}</p>
           <div className={styles.hotGameButtonWrapper}>
             <Button
               color="red"
-              width={!isMobile ? 192 : 238}
+              width={!isMobile ? 192 : isTablet ? 99 : 238}
               href={isMobile
                 ? `${mobSlotsUrls[index === -1
                   ? 0
@@ -410,7 +409,7 @@ const HotGamesSection = () => {
             ><span>{t('common.playNow')}</span></Button>
           </div>
           {
-            isMobile && (
+            isMobile && !isTablet && (
               <>
                 <div className={styles.iconArrows} />
                 <div className={styles.iconHand} />
@@ -419,7 +418,7 @@ const HotGamesSection = () => {
           }
         </Card>
         {
-          isMobile && (
+          isMobile && !isTablet && (
             <ReactSlider
               max={100}
               onChange={(value) => swiperRef.current.swiper.setProgress(value / 100)}
@@ -429,7 +428,7 @@ const HotGamesSection = () => {
           )
         }
         {
-          !isMobile && (
+          !isMobile && !isTablet && (
             <div className={styles.hotGamesCards}
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
@@ -509,6 +508,122 @@ const HotGamesSection = () => {
                     size={{ width: 343, height: 352 }}
                     rotation={-3.2}
                     position={{ top: -475, left: 265 }}
+                    text={t('hotGamesSection.card6Text')}
+                    inRotation={true}
+                    href={`${t('hotGamesSection.slotsPool.slotUrl6')}${slotQuery}`}
+                  />
+                  <HotGameCard
+                    id={'card7'}
+                    img={imageLink(t('hotGamesSection.slotsPool.slotImg7'))}
+                    borderColor={colors.blue2}
+                    zIndex={1}
+                    size={{ width: 20, height: 20 }}
+                    rotation={-2.76}
+                    position={{ top: 0, left: 0 }}
+                    text={t('hotGamesSection.card7Text')}
+                    inRotation={isHovered && true}
+                    href={`${t('hotGamesSection.slotsPool.slotUrl7')}${slotQuery}`}
+                  />
+                  <HotGameCard
+                    id={'card8'}
+                    img={imageLink(t('hotGamesSection.slotsPool.slotImg8'))}
+                    borderColor={colors.gray5}
+                    zIndex={1}
+                    size={{ width: 20, height: 20 }}
+                    rotation={-3.2}
+                    position={{ top: -200, left: 0 }}
+                    text={t('hotGamesSection.card8Text')}
+                    inRotation={isHovered && true}
+                    href={`${t('hotGamesSection.slotsPool.slotUrl8')}${slotQuery}`}
+                  />
+                </div>
+              </div>
+            </div>
+          )
+        }
+
+        {/* tablet */}
+        {
+          isTablet && (
+            <div className={styles.hotGamesCards}
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+            >
+              <div className={styles.hotGameWrapper}>
+                <div className={styles.hotGamesRow}>
+                  <HotGameCard
+                    id={'card1'}
+                    img={imageLink(t('hotGamesSection.slotsPool.slotImg1'))}
+                    borderColor={colors.blue1}
+                    zIndex={5}
+                    size={{ width: 211, height: 204 }}
+                    rotation={-4}
+                    position={{ top: 62, left: 60 }}
+                    text={t('hotGamesSection.card1Text')}
+                    inRotation={true}
+                    href={`${t('hotGamesSection.slotsPool.slotUrl1')}${slotQuery}`}
+                  />
+                  <HotGameCard
+                    id={'card2'}
+                    img={imageLink(t('hotGamesSection.slotsPool.slotImg2'))}
+                    borderColor={colors.red4}
+                    zIndex={1}
+                    size={{ width: 20, height: 20 }}
+                    rotation={-3.48}
+                    position={{ top: 120, left: 335 }}
+                    text={t('hotGamesSection.card2Text')}
+                    inRotation={isHovered && true}
+                    href={`${t('hotGamesSection.slotsPool.slotUrl2')}${slotQuery}`}
+                  />
+                  <HotGameCard
+                    id={'card3'}
+                    img={imageLink(t('hotGamesSection.slotsPool.slotImg3'))}
+                    borderColor={colors.blue1}
+                    zIndex={2}
+                    size={{ width: 135, height: 135 }}
+                    rotation={-4}
+                    position={{ top: 50, left: 113 }}
+                    text={t('hotGamesSection.card3Text')}
+                    inRotation={true}
+                    href={`${t('hotGamesSection.slotsPool.slotUrl3')}${slotQuery}`}
+                  />
+                  <HotGameCard
+                    id={'card4'}
+                    img={imageLink(t('hotGamesSection.slotsPool.slotImg4'))}
+                    borderColor={colors.red4}
+                    zIndex={3}
+                    size={{ width: 159, height: 159 }}
+                    rotation={-3.48}
+                    position={{ top: 92, left: -143 }}
+                    text={t('hotGamesSection.card4Text')}
+                    inRotation={true}
+                    href={`${t('hotGamesSection.slotsPool.slotUrl4')}${slotQuery}`}
+                  />
+                </div>
+                <div className={styles.cardsTitleWrapper}>
+                  <div className={styles.cardsTitle}>{t('hotGamesSection.chooseGame')}</div>
+                </div>
+                <div className={styles.hotGamesRow} style={{ height: 0 }}>
+                  <HotGameCard
+                    id={'card5'}
+                    img={imageLink(t('hotGamesSection.slotsPool.slotImg5'))}
+                    borderColor={colors.blue2}
+                    zIndex={1}
+                    size={{ width: 20, height: 20 }}
+                    rotation={-2.76}
+                    position={{ top: -200, left: 50 }}
+                    text={t('hotGamesSection.card5Text')}
+                    inRotation={isHovered && true}
+                    href={`${t('hotGamesSection.slotsPool.slotUrl5')}${slotQuery}`}
+                  />
+                  <HotGameCard
+                    id={'card6'}
+                    img={imageLink(t('hotGamesSection.slotsPool.slotImg6'))}
+                    borderColor={colors.gray5}
+                    zIndex={4}
+                    size={{ width: 215, height: 180 }}
+                    rotation={-3.2}
+                    position={{ top: -261, left: 112 }}
                     text={t('hotGamesSection.card6Text')}
                     inRotation={true}
                     href={`${t('hotGamesSection.slotsPool.slotUrl6')}${slotQuery}`}

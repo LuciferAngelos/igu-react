@@ -83,6 +83,97 @@
   }
 }
 
+:global(.tablet) .footer {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+
+  .copyright {
+    width: 596px;
+    font-size: 6px;
+    line-height: 8px;
+    font-weight: 300;
+    margin-left: 40px;
+    margin-top: 11px;
+  }
+
+  .logos {
+    margin-left: 0px;
+    margin-top: 11px;
+    margin-right: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mobileLogos {
+    display: none;
+  }
+
+  .curacac {
+    background-image: url("../../assets/icons/curacac.png");
+    width: 93px;
+    height: 31px;
+  }
+
+  .logo18 {
+    // position: absolute;
+    background-image: url("../../assets/icons/18plus.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 12px;
+  }
+
+  .logoGaming {
+    // position: absolute;
+    background-image: url("../../assets/icons/Gaming.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 41px;
+    height: 12px;
+  }
+
+  .logoJftf {
+    // position: absolute;
+    background-image: url("../../assets/icons/jftf 1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+  }
+
+
+  .carousel {
+    margin: 20px auto 10px;
+
+    .arrowButtonLeft {
+      left: -40px;
+      top: -10px;
+    }
+
+    .arrowButtonRight {
+      right: -40px;
+      top: -10px;
+      transform: rotate(180deg);
+    }
+  }
+
+  .playNow {
+    margin-bottom: 37px;
+  }
+
+  .bottomBlockWrapper {
+    margin-bottom: 25px;
+  }
+}
+
 :global(.mobile) .footer {
   height: auto;
   display: flex;

@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import styles from './GameCard.module.scss';
 import { useTranslation } from "react-i18next";
 import Button from "../uikit/Button/Button";
-import { isMobile } from "react-device-detect";
+import { isMobile, isTablet } from "react-device-detect";
 import { useUpdateLinks } from '../../hooks/updateLinks';
 import { baseUrl } from '../../config';
 
@@ -71,7 +71,7 @@ const GameCard: React.FC<GameCardProps> = (props) => {
         <div className={styles.content}>
           <p className={styles.title}>{title}</p>
           <div className={styles.buttonGroup}>
-            <Button href={`${href}${query}`} color="red" width={!isMobile ? 197 : 138} className={styles.playNow}><span>{t("common.playNow")}</span></Button>
+            <Button href={`${href}${query}`} color="red" width={!isMobile ? 197 : isTablet ? 101 : 138} className={styles.playNow}><span>{t("common.playNow")}</span></Button>
             <Button variant="empty" component="button" onClick={() => handleActiveCard(index)}>{t("gameCardsSection.learnMore")}</Button>
           </div>
         </div>
@@ -83,7 +83,7 @@ const GameCard: React.FC<GameCardProps> = (props) => {
         />
         <p className={styles.learnMoreTitle}>{t("gameCardsSection.learnMore")}</p>
         <p className={styles.learnMoreText}>{learnMoreText}</p>
-        <Button href={`${href}${query}`} color="green" width={!isMobile ? 228 : 198}><span>{t("gameCardsSection.registerNow")}</span></Button>
+        <Button href={`${href}${query}`} color="green" width={!isMobile ? 228 : isTablet ? 117 : 198}><span>{t("gameCardsSection.registerNow")}</span></Button>
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ import card2Image from '../../assets/images/gameCards/jackpot.png';
 import card2Background from '../../assets/images/gameCards/card2-background.png';
 import card3Image from '../../assets/images/gameCards/NinjavsSamurai_Samurai.png';
 import card3Background from '../../assets/images/gameCards/card3-background.png';
-import { isMobile } from "react-device-detect";
+import { isMobile, isTablet } from "react-device-detect";
 import Timer from "../Timer/Timer";
 import Card from "../Card/Card";
 
@@ -51,7 +51,7 @@ const GameCardsSection = () => {
     ))
   }
 
-  return <section className={`${styles.gameCardSection} wrapper ${!isMobile ? 'element-animation' : ''}`}>
+  return <section className={`${styles.gameCardSection} wrapper ${!isMobile ? 'element-animation' : isTablet ? 'element-animation' : ''}`}>
     <GameCard
       label={t("gameCardsSection.liveCasino")}
       title={t("gameCardsSection.roulette")}
@@ -78,7 +78,7 @@ const GameCardsSection = () => {
       href={t("urls.slotsUrl")}
     />
     {
-      isMobile && (
+      isMobile && !isTablet && (
         <Card height={174} className={styles.timer}>
           <p className={styles.timerTitle}>{t('topSection.tournamentStarts')}</p>
           <Timer />

@@ -86,3 +86,64 @@
     }
   }
 }
+
+:global(.tablet) .select {
+  height: 20px;
+  width: 99px;
+
+  .icon {
+    width: 23px;
+    height: 17px;
+    margin-left: 4px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .value {
+    font-size: 9px;
+    line-height: 11px;
+    font-weight: 300;
+    margin-left: 10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .arrow {
+    width: 6px;
+    height: 4px;
+    margin-right: 8px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .options {
+    width: 99px;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: -166px;
+    max-height: 166px;
+    overflow-y: scroll;
+  }
+
+  .option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 20px;
+    position: relative;
+
+    &:after {
+      content: '';
+      display: block;
+      height: 1px;
+      width: 80px;
+      position: absolute;
+      left: 10px;
+      bottom: 0;
+    }
+  }
+}

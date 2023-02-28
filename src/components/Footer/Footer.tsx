@@ -11,7 +11,7 @@ import payment5 from '../../assets/icons/payment/qiwi.png';
 import payment6 from '../../assets/icons/payment/visa.png';
 import payment7 from '../../assets/icons/payment/visa-1.png';
 import payment8 from '../../assets/icons/payment/yandex.png';
-import { isMobile } from "react-device-detect";
+import { isMobile, isTablet } from "react-device-detect";
 import Button from "../uikit/Button/Button";
 import { baseUrl } from '../../config';
 import { useUpdateLinks } from '../../hooks/updateLinks';
@@ -57,56 +57,80 @@ const Footer = () => {
           <div
             style={{
               backgroundImage: `url(${payment1})`,
-              width: '120px',
+              backgroundSize: 'contain',
+              backgroundPosition: 'center',
+              width: isTablet ? '56px' : '120px',
+              backgroundRepeat: 'no-repeat',
               height: '21px'
             }}
           />
           <div
             style={{
               backgroundImage: `url(${payment2})`,
-              width: '120px',
+              backgroundSize: 'contain',
+              backgroundPosition: 'center',
+              width: isTablet ? '56px' : '120px',
+              backgroundRepeat: 'no-repeat',
               height: '21px'
             }}
           />
           <div
             style={{
               backgroundImage: `url(${payment3})`,
-              width: '120px',
+              backgroundSize: 'contain',
+              backgroundPosition: 'center',
+              width: isTablet ? '56px' : '120px',
+              backgroundRepeat: 'no-repeat',
               height: '21px'
             }}
           />
           <div
             style={{
               backgroundImage: `url(${payment4})`,
-              width: '120px',
+              backgroundSize: 'contain',
+              backgroundPosition: 'center',
+              width: isTablet ? '56px' : '120px',
+              backgroundRepeat: 'no-repeat',
               height: '21px'
             }}
           />
           <div
             style={{
               backgroundImage: `url(${payment5})`,
-              width: '120px',
+              backgroundSize: 'contain',
+              backgroundPosition: 'center',
+              width: isTablet ? '56px' : '120px',
+              backgroundRepeat: 'no-repeat',
               height: '21px'
             }}
           />
           <div
             style={{
               backgroundImage: `url(${payment6})`,
-              width: '120px',
+              backgroundSize: 'contain',
+              backgroundPosition: 'center',
+              width: isTablet ? '56px' : '120px',
+              backgroundRepeat: 'no-repeat',
               height: '21px'
             }}
           />
           <div
             style={{
               backgroundImage: `url(${payment7})`,
-              width: '120px',
+              backgroundSize: 'contain',
+              backgroundPosition: 'center',
+              width: isTablet ? '56px' : '120px',
+              backgroundRepeat: 'no-repeat',
               height: '21px'
             }}
           />
           <div
             style={{
               backgroundImage: `url(${payment8})`,
-              width: '120px',
+              backgroundSize: 'contain',
+              backgroundPosition: 'center',
+              width: isTablet ? '56px' : '120px',
+              backgroundRepeat: 'no-repeat',
               height: '21px'
             }}
           />
@@ -126,7 +150,7 @@ const Footer = () => {
         </div>
       </div>
       {
-        isMobile && (
+        isMobile && !isTablet && (
           <Button href={`${baseUrl}${query}`} width={238} className={styles.playNow}><span>{t('common.playNow')}</span></Button>
         )
       }

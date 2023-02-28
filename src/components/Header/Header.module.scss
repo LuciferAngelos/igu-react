@@ -42,6 +42,33 @@
   padding-top: 19px;
 }
 
+:global(.tablet) .logo {
+  width: 65px;
+  height: 30px;
+}
+
+:global(.tablet) .header {
+  height: 43px;
+  padding-top: 9px;
+}
+
+:global(.tablet) .registerWrapper {
+  margin-top: -3px;
+
+  &:after {
+    position: absolute;
+    content: '';
+    height: 10px;
+    width: 10px;
+    background: white;
+    right: -1px;
+    top: 8px;
+    transform: rotate(45deg);
+    background: linear-gradient(135deg, map_get($common, 'green-1') 0%, map_get($common, 'yellow-1') 100%);
+    color: map_get($common, 'black-3');
+  }
+}
+
 @-webkit-keyframes reminder {
 
   0%,

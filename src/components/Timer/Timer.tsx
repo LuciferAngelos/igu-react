@@ -5,7 +5,7 @@ import moment from 'moment';
 import { timerTimeLeft } from "../../config";
 import FlipClockCountdown from "@leenguyen/react-flip-clock-countdown";
 import "@leenguyen/react-flip-clock-countdown/dist/index.css";
-import { isMobile } from 'react-device-detect';
+import { isMobile, isTablet } from 'react-device-detect';
 
 const Timer = () => {
   const [timeLeft, setTimeLeft] = useState(timerTimeLeft);
@@ -47,12 +47,14 @@ const Timer = () => {
       labels={[t('timer.day'), t('timer.hour'), t('timer.min'), t(t('timer.sec'))]}
       labelStyle={!isMobile
         ? { fontSize: 15, fontWeight: 400 }
-        : { fontSize: 10, fontWeight: 400, bottom: -5 }}
+        : isTablet ? { fontSize: 8, fontWeight: 400 }
+          : { fontSize: 10, fontWeight: 400, bottom: -5 }}
       digitBlockStyle={!isMobile
         ? { width: 40, height: 56, fontSize: 32 }
-        : { width: 32, height: 40, fontSize: 21 }}
+        : isTablet ? { width: 18, height: 19, fontSize: 10 }
+          : { width: 32, height: 40, fontSize: 21 }}
       dividerStyle={{ color: 'white', height: 0 }}
-      separatorStyle={{ color: 'white', size: '5px' }}
+      separatorStyle={{ color: 'white', size: isTablet ? '2px' : '5px' }}
       duration={0.5}
       renderMap={[true, true, true, true]}
     />

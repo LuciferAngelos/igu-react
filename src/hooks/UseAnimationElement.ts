@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { isMobile } from "react-device-detect";
+import { isMobile, isTablet } from "react-device-detect";
 
 function UseAnimationElement(dependency = [], condition = true) {
   function onEntry(entry) {
@@ -14,7 +14,7 @@ function UseAnimationElement(dependency = [], condition = true) {
 
   useEffect(() => {
     if (condition) {
-      const options = { threshold: [!isMobile ? .3 : 1] };
+      const options = { threshold: [!isMobile ? .3 : isTablet ? .4 : 1] };
       const observer = new IntersectionObserver(onEntry, options);
       const elements = document.querySelectorAll('.element-animation');
       for (const elm of elements) {

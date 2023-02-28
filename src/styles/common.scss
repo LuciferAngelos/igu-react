@@ -36,6 +36,10 @@ a {
   display: flex;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
 .element-animation {
   opacity: 0;
   transform: translateY(40px);
@@ -61,6 +65,23 @@ a {
     opacity: 1;
     transform: translateY(0);
     transition: none;
+  }
+}
+
+.tablet {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 744px;
+  padding: 6px;
+
+  .wrapper {
+    width: 100%;
+    max-width: 744px;
+    margin: 0;
+  }
+
+  .flip-clock {
+    --fcc-separator-size: 2px;
   }
 }
 

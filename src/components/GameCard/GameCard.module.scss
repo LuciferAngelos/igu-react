@@ -336,6 +336,141 @@
   }
 }
 
+:global(.tablet) .gameCard {
+  width: 235px;
+  border-radius: 8px;
+  height: 335px;
+  margin-top: 32px;
+
+  &:global(.element-show) {
+    .cardImage {
+      transform: scale(1.2) translate(-43%, 10%) !important;
+      top: 15px;
+    }
+
+    .labelText {
+      min-width: auto;
+    }
+  }
+
+  &:hover(.element-show) {
+    .labelText {
+      min-width: auto;
+    }
+  }
+
+  .content {
+    height: 207px;
+    border-radius: 0 0 8px 8px;
+    padding: 10px 11px 0 22px;
+  }
+
+  .title {
+    width: 195px;
+    font-size: 16px;
+    line-height: 17.6px;
+    margin-top: 90px;
+  }
+
+  .buttonGroup {
+    bottom: 25px;
+  }
+
+  .playNow {
+    margin-right: 5px;
+  }
+
+  .background {
+    top: 0;
+    height: 215px;
+    width: 100%;
+    background-size: cover;
+  }
+
+  .labelWrapper {
+    width: 100%;
+    height: 222px;
+    overflow: hidden;
+    position: relative;
+
+  }
+
+  .label {
+    left: -5%;
+    top: 163px;
+    padding: 0 20px 0 25px;
+    height: 30px;
+  }
+
+  .labelText {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .cardImage {
+    top: 40px;
+    width: 148px;
+    height: 195px;
+    background-size: contain;
+  }
+
+  &.gameCardGradient {
+    .background {
+      height: 100%;
+      border-radius: 8px;
+      background-size: 100%;
+      background-position-y: 40px;
+
+      &:before {
+        border-radius: 8px;
+        height: 220px;
+      }
+
+      &:after {
+        height: 125px;
+      }
+    }
+
+    .cardImage {
+      width: 169px;
+      height: 165px;
+      transform: translate(-54%) scale(1.1);
+      background-size: contain;
+    }
+  }
+
+  &.gameCardLearnMore {
+    height: 306px;
+    padding: 34px 17px 26px;
+    margin-top: 61px;
+    width: 235px;
+
+    .learnMoreTitle {
+      font-size: 18px;
+      line-height: 20px;
+      margin-bottom: 15px;
+    }
+
+    .learnMoreText {
+      font-size: 16px;
+      line-height: 18px;
+      height: 60%;
+      overflow-y: scroll;
+    }
+
+    .closeButton {
+      position: absolute;
+      right: 12px;
+      top: 11px;
+      width: 16px;
+      height: 16px;
+      background-size: contain;
+      background-image: url("../../assets/icons/close.png");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
 @-webkit-keyframes card-flip-start {
   0% {
     transform: perspective(700px) rotateY(0deg);
