@@ -240,6 +240,14 @@
   height: 436px;
   margin-top: 32px;
 
+  &:hover,
+  &:global(.element-show) {
+    .cardImage {
+      transform: scale(1.2) translate(-43%, 10%) !important;
+      top: -35px;
+    }
+  }
+
   .content {
     height: 307px;
     border-radius: 0 0 8px 8px;
@@ -263,12 +271,12 @@
     top: 0;
     height: 300px;
     width: 100%;
-    background-size: cover;
+    background-size: contain;
   }
 
   .label {
     left: -5%;
-    top: 196px;
+    top: 198px;
     padding: 0 20px 0 25px;
     height: 40px;
   }
@@ -290,7 +298,7 @@
       height: 100%;
       border-radius: 8px;
       background-size: 100%;
-      background-position-y: 20px;
+      background-position-y: 40px;
 
       &:before {
         border-radius: 8px;
