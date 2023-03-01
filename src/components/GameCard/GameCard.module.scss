@@ -220,7 +220,10 @@
       font-size: 27px;
       font-weight: 300;
       line-height: 33px;
-      text-transform: lowercase;
+      // text-transform: lowercase;
+      max-height: 463px;
+      overflow-y: scroll;
+      margin-bottom: 25px;
     }
 
     .closeButton {
@@ -330,6 +333,7 @@
     .learnMoreText {
       font-size: 20px;
       line-height: 25px;
+      max-height: 316px;
     }
 
     .closeButton {
