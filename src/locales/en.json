@@ -33,10 +33,13 @@
     "slots": "OVER 3000 SLOTS FOR EVERY TASTE",
     "tournaments": "TOURNAMENTS",
     "newTournaments": "NEW TOURNAMENTS\nDON'T MISS THE START",
-    "card1LearnMore": "Live casino (learn more) Enjoy Live Casino games which are streamed in real-time, where real dealers shuffle, deal and interact with Live Casino players. Play Live Blackjack, Live Roulette, Live Baccarat and many more to win with Igucasino!  Experience the fun, the thrill, and the majic of possibility.",
-    "card2LearnMore": "Casino (learn more)   \nChoose any game from the biggest collection of over 3000 slots. You`ll find any types of games for your taste. \nPlay now and win the JACKPOT!",
-    "card3LearnMore": "Tournaments (learn more)    \nHow to join a tournament?\n1. Find the tournament you want to play.\n2. Play to the full according to the conditions to win.\n3. Enjoy the glory!\nBecome a fierce battles player. Place your bets \nand move up the leaderboard. The more bets, \nthe higher the reward.",
-    "registerNow": "Register now"
+    "card1LearnMore": "Enjoy Live Casino games which are streamed in real-time, where real dealers shuffle, deal and interact with Live Casino players.\nPlay Live Blackjack, Live Roulette, Live Baccarat and many more to win with Igucasino!\nExperience the fun, the thrill, and the majic of possibility.",
+    "card2LearnMore": "Choose any game from the biggest collection of over 3000 slots. You`ll find any types of games for your taste.\n\nPlay now and win the JACKPOT!",
+    "card3LearnMore": "How to join a tournament?\n1. Find the tournament you want to play.\n2. Play to the full according to the conditions to win.\n3. Enjoy the glory!\n\nBecome a fierce battles player. Place your bets and move up the leaderboard. The more bets, the higher the reward.",
+    "registerNow": "Register now",
+    "liveBackcardTitle": "Заголовок1",
+    "jackpotBackcardTitle": "Заголовок2",
+    "tournamentBackcardTitle": "Заголовок3"
   },
   "hotGamesSection": {
     "title": "hOt games are waiting for you right now",

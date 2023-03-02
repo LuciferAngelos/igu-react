@@ -53,13 +53,13 @@ const TopSection = () => {
     }, 300);
   }
 
-  window.addEventListener('load', () => {
-    let w = document.querySelector('#womanFull');
-    if (w) {
-      //@ts-ignore
-      w.style.display = 'none';
-    }
-  })
+  // window.addEventListener('load', () => {
+  //   let w = document.querySelector('#womanFull');
+  //   if (w) {
+  //     //@ts-ignore
+  //     w.style.display = 'none';
+  //   }
+  // })
 
   return (
     <section className={`${styles.topSection} ${!isMobile || isTablet ? 'element-animation' : ''}`}>
@@ -70,7 +70,7 @@ const TopSection = () => {
       {
         !isMobile && (
           <div className={styles.woman}>
-            <div className={styles.womanFull} id="womanFull"></div>
+            {/* <div className={styles.womanFull} id="womanFull"></div> */}
             <div className={styles.womanBack1} />
             <div className={styles.womanBack2} />
             <div className={styles.womanBack3} />
@@ -85,7 +85,7 @@ const TopSection = () => {
       {
         isTablet && (
           <div className={styles.woman}>
-            <div className={styles.womanFull} id="womanFull"></div>
+            {/* <div className={styles.womanFull} id="womanFull"></div> */}
             <div className={styles.womanBack1} />
             <div className={styles.womanBack2} />
             <div className={styles.womanBack3} />

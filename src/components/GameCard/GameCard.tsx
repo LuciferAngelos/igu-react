@@ -17,11 +17,12 @@ interface GameCardProps {
   isActive: boolean;
   handleActiveCard: (arg: number) => void;
   isClicked: boolean;
-  href: string
+  href: string;
+  backcardTitle: string
 }
 
 const GameCard: React.FC<GameCardProps> = (props) => {
-  const { label, title, image, background, gradientMode, learnMoreText, index, isActive, handleActiveCard, isClicked, href } = props;
+  const { label, title, image, background, gradientMode, learnMoreText, index, isActive, handleActiveCard, isClicked, href, backcardTitle } = props;
   const ref = useRef<HTMLDivElement>();
   const { t } = useTranslation();
   const { query } = useUpdateLinks()
@@ -81,7 +82,7 @@ const GameCard: React.FC<GameCardProps> = (props) => {
           className={styles.closeButton}
           onClick={() => handleActiveCard(index)}
         />
-        <p className={styles.learnMoreTitle}>{t("gameCardsSection.learnMore")}</p>
+        <p className={styles.learnMoreTitle}>{backcardTitle}</p>
         <p className={styles.learnMoreText}>{learnMoreText}</p>
         <Button href={`${href}${query}`} color="green" width={!isMobile ? 228 : isTablet ? 117 : 198}><span>{t("gameCardsSection.registerNow")}</span></Button>
       </div>
